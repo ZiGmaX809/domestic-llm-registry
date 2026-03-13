@@ -156,33 +156,31 @@ jobs:
           echo "📂 目标目录: $TARGET_DIR"
           echo "🖥️  服务器: $ECS_USER@$ECS_HOST:$ECS_PORT"
 
-          # 创建目标目录
-          echo "创建目录结构..."
-          ssh -p $ECS_PORT -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no \
-            $ECS_USER@$ECS_HOST "mkdir -p $TARGET_DIR"
-
-          # 上传 JSON 文件（使用 SFTP）
+          # 上传 JSON 文件（纯 SFTP，不使用任何 SSH shell 命令）
           if [ -f "output/domestic_llm_models.json" ]; then
             echo "📤 上传 domestic_llm_models.json（使用 SFTP）..."
 
             # 创建 SFTP 批处理脚本
-            cat > /tmp/sftp_batch.txt << EOF
-            put output/domestic_llm_models.json $TARGET_DIR/domestic_llm_models.json
-            EOF
+            # 使用 -mkdir 并在命令前加 - 前缀，表示忽略目录已存在的错误
+            cat > /tmp/sftp_batch.txt << 'EOF'
+          -mkdir /api_data
+          -mkdir /api_data/llm
+          put output/domestic_llm_models.json /api_data/llm/domestic_llm_models.json
+          EOF
 
             # 执行 SFTP 上传
             sftp -P $ECS_PORT -i ~/.ssh/id_rsa -b /tmp/sftp_batch.txt \
               -o StrictHostKeyChecking=no \
               $ECS_USER@$ECS_HOST
 
-            # 验证上传的文件
-            echo "🔍 验证文件..."
-            ssh -p $ECS_PORT -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no \
-              $ECS_USER@$ECS_HOST "ls -lh $TARGET_DIR/domestic_llm_models.json && echo '' && head -20 $TARGET_DIR/domestic_llm_models.json"
+            echo "✅ 文件上传完成"
+          else
+            echo "❌ 文件不存在: output/domestic_llm_models.json"
+            exit 1
           fi
 
-          # 清理私钥
-          rm -f ~/.ssh/id_rsa ~/.ssh/known_hosts
+          # 清理敏感文件
+          rm -f ~/.ssh/id_rsa ~/.ssh/known_hosts /tmp/sftp_batch.txt
 
           echo "✅ 文件同步完成"
 
@@ -191,6 +189,7 @@ jobs:
     name: Cleanup Old Artifacts
     runs-on: ubuntu-latest
     needs: [update-models, deploy-to-ecs]
+    if: always()
     permissions:
       actions: write
 
