@@ -161,12 +161,19 @@ jobs:
           ssh -p $ECS_PORT -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no \
             $ECS_USER@$ECS_HOST "mkdir -p $TARGET_DIR"
 
-          # 上传 JSON 文件
+          # 上传 JSON 文件（使用 SFTP）
           if [ -f "output/domestic_llm_models.json" ]; then
-            echo "📤 上传 domestic_llm_models.json..."
-            scp -P $ECS_PORT -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no \
-              output/domestic_llm_models.json \
-              $ECS_USER@$ECS_HOST:$TARGET_DIR/
+            echo "📤 上传 domestic_llm_models.json（使用 SFTP）..."
+
+            # 创建 SFTP 批处理脚本
+            cat > /tmp/sftp_batch.txt << EOF
+            put output/domestic_llm_models.json $TARGET_DIR/domestic_llm_models.json
+            EOF
+
+            # 执行 SFTP 上传
+            sftp -P $ECS_PORT -i ~/.ssh/id_rsa -b /tmp/sftp_batch.txt \
+              -o StrictHostKeyChecking=no \
+              $ECS_USER@$ECS_HOST
 
             # 验证上传的文件
             echo "🔍 验证文件..."
