@@ -112,37 +112,30 @@ jobs:
           name: domestic-llm-models-${{ github.run_number }}
           path: output/
 
-      - name: Setup SSH
+      - name: Setup SFTP
         run: |
           mkdir -p ~/.ssh
           echo "${{ secrets.ECS_SSH_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ env.ECS_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Deploy to ECS
+      - name: Deploy to ECS via SFTP
         run: |
-          echo "🚀 正在部署到阿里云 ECS..."
+          echo "🚀 正在部署到阿里云 ECS (SFTP only)..."
           echo "主机: ${{ env.ECS_HOST }}"
           echo "路径: ${{ env.ECS_PATH }}"
 
-          # 确保目标目录存在
-          ssh ${{ env.ECS_USER }}@${{ env.ECS_HOST }} "mkdir -p ${{ env.ECS_PATH }}"
+          # 使用 SFTP 直接上传文件到指定路径
+          # 使用 sftp 子命令语法: sftp -o "batch file" user@host
+          echo "put output/domestic_llm_models.json ${{ env.ECS_PATH }}/domestic_llm_models.json" | \
+          sftp -o StrictHostKeyChecking=no \
+               -o IdentityFile=~/.ssh/id_rsa \
+               -o BatchMode=yes \
+               -o ConnectTimeout=30 \
+               ${{ env.ECS_USER }}@${{ env.ECS_HOST }}
 
-          # 使用 scp 上传文件
-          scp output/domestic_llm_models.json ${{ env.ECS_USER }}@${{ env.ECS_HOST }}:${{ env.ECS_PATH }}/
+          echo "✅ 文件上传成功!"
 
-          # 验证文件
-          ssh ${{ env.ECS_USER }}@${{ env.ECS_HOST }} "
-            echo '📦 文件已上传:'
-            ls -lh ${{ env.ECS_PATH }}/domestic_llm_models.json
-            echo ''
-            echo '📊 文件内容验证:'
-            head -n 20 ${{ env.ECS_PATH }}/domestic_llm_models.json
-          "
-
-          echo "✅ 部署完成!"
-
-      - name: Cleanup SSH
+      - name: Cleanup
         if: always()
         run: |
-          rm -rf ~/.ssh/id_rsa ~/.ssh/known_hosts
+          rm -rf ~/.ssh/id_rsa
