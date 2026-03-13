@@ -16,13 +16,6 @@ on:
       - 'fetch_domestic_models.py'
       - '.github/workflows/update-models.yml'
 
-env:
-  # ECS 服务器配置
-  ECS_HOST: ${{ secrets.ECS_HOST }}
-  ECS_PORT: ${{ secrets.ECS_PORT || '22' }}
-  ECS_USER: ${{ secrets.ECS_USER }}
-  ECS_PATH: ${{ secrets.ECS_PATH || '/api_data/llm' }}
-
 jobs:
   update-models:
     name: Fetch and Update Models
@@ -134,7 +127,6 @@ jobs:
           ECS_HOST: ${{ secrets.ECS_HOST }}
           ECS_PORT: ${{ secrets.ECS_PORT || '22' }}
           ECS_USER: ${{ secrets.ECS_USER }}
-          ECS_PATH: ${{ secrets.ECS_PATH || '/api_data/llm' }}
           ECS_SSH_KEY: ${{ secrets.ECS_SSH_KEY }}
         run: |
           echo "📡 检查是否需要同步到阿里云 ECS..."
@@ -146,14 +138,11 @@ jobs:
             echo "   - ECS_HOST: 服务器地址"
             echo "   - ECS_PORT: SSH 端口（可选，默认 22）"
             echo "   - ECS_USER: SSH 用户名"
-            echo "   - ECS_PATH: 目标路径（可选，默认 /api_data/llm）"
             echo "   - ECS_SSH_KEY: SSH 私钥"
             exit 0
           fi
 
           echo "🚀 开始同步文件到阿里云 ECS..."
-          echo "🖥️  服务器: $ECS_USER@$ECS_HOST:$ECS_PORT"
-          echo "📂 目标路径: $ECS_PATH"
 
           # 设置 SSH 密钥
           mkdir -p ~/.ssh
@@ -161,22 +150,28 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -p $ECS_PORT -H $ECS_HOST >> ~/.ssh/known_hosts 2>/dev/null
 
-          # 确保目标目录存在
-          echo "📁 创建目标目录..."
+          # 目标路径
+          TARGET_DIR="/api_data/llm"
+
+          echo "📂 目标目录: $TARGET_DIR"
+          echo "🖥️  服务器: $ECS_USER@$ECS_HOST:$ECS_PORT"
+
+          # 创建目标目录
+          echo "创建目录结构..."
           ssh -p $ECS_PORT -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no \
-            $ECS_USER@$ECS_HOST "mkdir -p $ECS_PATH"
+            $ECS_USER@$ECS_HOST "mkdir -p $TARGET_DIR"
 
           # 上传 JSON 文件
           if [ -f "output/domestic_llm_models.json" ]; then
             echo "📤 上传 domestic_llm_models.json..."
             scp -P $ECS_PORT -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no \
               output/domestic_llm_models.json \
-              $ECS_USER@$ECS_HOST:$ECS_PATH/
+              $ECS_USER@$ECS_HOST:$TARGET_DIR/
 
             # 验证上传的文件
             echo "🔍 验证文件..."
             ssh -p $ECS_PORT -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no \
-              $ECS_USER@$ECS_HOST "ls -lh $ECS_PATH/domestic_llm_models.json && echo '' && head -20 $ECS_PATH/domestic_llm_models.json"
+              $ECS_USER@$ECS_HOST "ls -lh $TARGET_DIR/domestic_llm_models.json && echo '' && head -20 $TARGET_DIR/domestic_llm_models.json"
           fi
 
           # 清理私钥

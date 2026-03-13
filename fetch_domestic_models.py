@@ -34,19 +34,54 @@ DOMESTIC_PATTERNS = [
     r"^(moonshot|moonshot-v1)",
     r"^kimi/",
     # 月之暗面
+    # MiniMax
     r"^(minimax|minimax-abab|minimax-abab5|minimax-abab6)",
+    r"^minimax/",
+    r"^abab",
+    r"minimax\.",  # 匹配 bedrock/xxx/minimax.xxx 格式
+    r"/minimax\.",  # 匹配路径中的 minimax.xxx
+    r"/minimax/",   # 匹配 openrouter/minimax/xxx
+    r"minimaxai",   # 匹配 vertex_ai/minimaxai/xxx
+    r"MiniMaxAI",   # 匹配 gmi/MiniMaxAI/xxx
+    r"/minimax-",   # 匹配 fireworks_ai/xxx/minimax-xxx
+    r"minimax-m",   # 匹配 minimax-m1, minimax-m2 等
+    # 百川智能
     r"^baichuan/",
+    # 上海人工智能实验室
     r"^internlm/",
-    r"^spark|xinghua/",
     # 讯飞星火
+    r"^spark|xinghua/",
     r"^(sensenova)",
+    # StepFun (阶跃星辰)
     r"^(stepfun)",
+    r"^step-1",
+    # Claude 中国版
     r"^claude-3-.*-cn",
+    # 火山引擎豆包
     r"^doubao/",
     r"^volcengine/",
-    # 火山引擎豆包
     r"^(hailuo|glm-4c)",
+    # 面壁智能
+    r"^cpm",
+    r"^him",
+    # 澜舟科技
+    r"^mengzi",
+    # 达观数据
+    r"^daguan",
+    # 360
+    r"^360",
+    r"^zhiqun",
+    # Novita
     r"^novita/",
+    # 元象
+    r"^xverse/",
+    # 语言云
+    r"^langyun/",
+    # 其他国产关键词
+    r"^jina/",
+    r"^pro/",
+    # AI21 Labs 中国版
+    r"^jamba-",
 ]
 
 # 编译正则表达式
@@ -187,6 +222,7 @@ def filter_and_normalize(data: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
     domestic_models = {}
     domestic_count = 0
     provider_stats: Dict[str, int] = {}
+    unmatched_models = []
 
     for model_name, model_spec in data.items():
         if is_domestic_model(model_name):
@@ -199,12 +235,24 @@ def filter_and_normalize(data: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
             provider = normalized_spec.get("litellm_provider", "unknown")
             provider_stats[provider] = provider_stats.get(provider, 0) + 1
 
+        # 收集可能遗漏的国产模型（用于调试）
+        domestic_keywords = ["minimax", "abab", "海螺", "面壁", "百川", "智谱", "月之暗面", "阶跃", "stepfun", "hailuo"]
+        if any(keyword.lower() in model_name.lower() for keyword in domestic_keywords):
+            if model_name not in domestic_models:
+                unmatched_models.append(model_name)
+
     print(f"筛选完成，共找到 {domestic_count} 个国产模型")
 
     # 打印提供商统计
     print("\n按提供商统计:")
     for provider, count in sorted(provider_stats.items(), key=lambda x: x[1], reverse=True):
         print(f"  {provider}: {count} 个模型")
+
+    # 显示未匹配的疑似国产模型
+    if unmatched_models:
+        print("\n⚠️ 可能遗漏的国产模型（未匹配）:")
+        for model in unmatched_models[:10]:  # 只显示前10个
+            print(f"  - {model}")
 
     return domestic_models
 
