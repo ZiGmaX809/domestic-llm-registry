@@ -19,9 +19,9 @@ on:
 env:
   # ECS 服务器配置
   ECS_HOST: ${{ secrets.ECS_HOST }}
+  ECS_PORT: ${{ secrets.ECS_PORT || '22' }}
   ECS_USER: ${{ secrets.ECS_USER }}
-  ECS_PATH: ${{ secrets.ECS_PATH }}
-  # ECS 路径示例: /data/domestic-llm-registry
+  ECS_PATH: ${{ secrets.ECS_PATH || '/api_data/llm' }}
 
 jobs:
   update-models:
@@ -31,9 +31,14 @@ jobs:
     permissions:
       contents: write
 
+    outputs:
+      has_changes: ${{ steps.check_changes.outputs.changes }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -48,6 +53,7 @@ jobs:
 
       - name: Fetch domestic models
         run: |
+          echo "🚀 开始获取国产模型数据..."
           python fetch_domestic_models.py
 
       - name: Show statistics
@@ -80,30 +86,41 @@ jobs:
       - name: Check for changes
         id: check_changes
         run: |
-          if git diff --quiet output/domestic_llm_models.json; then
-            echo "has_changes=false" >> $GITHUB_OUTPUT
+          # 添加文件到git
+          git add output/domestic_llm_models.json
+
+          # 检查是否有变化
+          if git diff --cached --quiet output/domestic_llm_models.json; then
+            echo "changes=false" >> $GITHUB_OUTPUT
             echo "⚠️ 模型数据未发生变化"
           else
-            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "changes=true" >> $GITHUB_OUTPUT
             echo "✅ 检测到模型数据变化"
+            git diff --cached --stat
           fi
 
       - name: Commit and push changes
-        if: steps.check_changes.outputs.has_changes == 'true'
+        if: steps.check_changes.outputs.changes == 'true'
         run: |
-          git add output/domestic_llm_models.json
-          git commit -m "chore: update domestic LLM models
+          BEIJING_TIME=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')
+          MODEL_COUNT=$(python3 -c "import json; print(json.load(open('output/domestic_llm_models.json'))['metadata']['total_models'])")
 
-          - 更新时间: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
-          - 模型总数: $(python3 -c "import json; print(json.load(open('output/domestic_llm_models.json'))['metadata']['total_models'])")
+          git commit -m "🤖 更新国产模型清单 - $BEIJING_TIME
+
+          - 模型总数: $MODEL_COUNT
           - Workflow: ${{ github.workflow }}
-          - Run: #${{ github.run_number }}"
+          - Run: #${{ github.run_number }}
+
+          Co-Authored-By: Claude <noreply@anthropic.com>"
+
           git push
 
   deploy-to-ecs:
     name: Deploy to Aliyun ECS
     runs-on: ubuntu-latest
     needs: update-models
+    # 仅在有数据变化时部署
+    if: needs.update-models.outputs.has_changes == 'true'
 
     steps:
       - name: Download artifact
@@ -112,61 +129,104 @@ jobs:
           name: domestic-llm-models-${{ github.run_number }}
           path: output/
 
-      - name: Setup SFTP
+      - name: Sync files to Alibaba Cloud ECS
+        env:
+          ECS_HOST: ${{ secrets.ECS_HOST }}
+          ECS_PORT: ${{ secrets.ECS_PORT || '22' }}
+          ECS_USER: ${{ secrets.ECS_USER }}
+          ECS_PATH: ${{ secrets.ECS_PATH || '/api_data/llm' }}
+          ECS_SSH_KEY: ${{ secrets.ECS_SSH_KEY }}
         run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.ECS_SSH_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
+          echo "📡 检查是否需要同步到阿里云 ECS..."
 
-      - name: Deploy to ECS via SFTP
-        run: |
-          echo "🚀 正在部署到阿里云 ECS (SFTP only)..."
-          echo "主机: ${{ env.ECS_HOST }}"
-          echo "目标路径: ${{ env.ECS_PATH }}"
-
-          # 1. 先查看 SFTP 用户的根目录和可访问的目录
-          echo ""
-          echo "📂 检查 SFTP 环境信息:"
-          (echo "pwd"; echo "ls -la"; echo "quit") | sftp -o StrictHostKeyChecking=no -o IdentityFile=~/.ssh/id_rsa ${{ env.ECS_USER }}@${{ env.ECS_HOST }} 2>&1 | head -30
-
-          echo ""
-          echo "📤 尝试上传文件..."
-
-          # 2. 创建 SFTP 批处理脚本
-          cat > /tmp/sftp_cmd.txt << 'ENDSCRIPT'
-          # 显示当前目录
-          pwd
-
-          # 尝试切换到目标目录
-          cd -P /var/www/casecat.cn/api_data/llm
-          put output/domestic_llm_models.json domestic_llm_models.json
-
-          # 验证文件
-          ls -lh domestic_llm_models.json
-          pwd
-          quit
-          ENDSCRIPT
-
-          # 3. 执行 SFTP
-          if sftp -b /tmp/sftp_cmd.txt -o StrictHostKeyChecking=no -o IdentityFile=~/.ssh/id_rsa ${{ env.ECS_USER }}@${{ env.ECS_HOST }}; then
-            echo ""
-            echo "✅ 文件上传成功!"
-          else
-            echo ""
-            echo "⚠️ 上传到指定路径失败，尝试上传到 SFTP 根目录..."
-
-            # 备用方案：上传到 SFTP 根目录
-          cat > /tmp/sftp_fallback.txt << 'ENDSCRIPT'
-          put output/domestic_llm_models.json domestic_llm_models.json
-          ls -lh domestic_llm_models.json
-          quit
-          ENDSCRIPT
-
-          sftp -b /tmp/sftp_fallback.txt -o StrictHostKeyChecking=no -o IdentityFile=~/.ssh/id_rsa ${{ env.ECS_USER }}@${{ env.ECS_HOST }}
-          echo "✅ 文件已上传到 SFTP 根目录（请手动移动到目标位置）"
+          # 检查必要的 Secrets 是否配置，未配置则跳过
+          if [ -z "$ECS_HOST" ] || [ -z "$ECS_USER" ] || [ -z "$ECS_SSH_KEY" ]; then
+            echo "⏭️  ECS 同步未配置，跳过此步骤"
+            echo "💡 如需启用，请在 GitHub 仓库 Settings > Secrets 中配置："
+            echo "   - ECS_HOST: 服务器地址"
+            echo "   - ECS_PORT: SSH 端口（可选，默认 22）"
+            echo "   - ECS_USER: SSH 用户名"
+            echo "   - ECS_PATH: 目标路径（可选，默认 /api_data/llm）"
+            echo "   - ECS_SSH_KEY: SSH 私钥"
+            exit 0
           fi
 
-      - name: Cleanup
-        if: always()
-        run: |
-          rm -rf ~/.ssh/id_rsa /tmp/sftp_batch.txt 2>/dev/null || true
+          echo "🚀 开始同步文件到阿里云 ECS..."
+          echo "🖥️  服务器: $ECS_USER@$ECS_HOST:$ECS_PORT"
+          echo "📂 目标路径: $ECS_PATH"
+
+          # 设置 SSH 密钥
+          mkdir -p ~/.ssh
+          echo "$ECS_SSH_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -p $ECS_PORT -H $ECS_HOST >> ~/.ssh/known_hosts 2>/dev/null
+
+          # 确保目标目录存在
+          echo "📁 创建目标目录..."
+          ssh -p $ECS_PORT -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no \
+            $ECS_USER@$ECS_HOST "mkdir -p $ECS_PATH"
+
+          # 上传 JSON 文件
+          if [ -f "output/domestic_llm_models.json" ]; then
+            echo "📤 上传 domestic_llm_models.json..."
+            scp -P $ECS_PORT -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no \
+              output/domestic_llm_models.json \
+              $ECS_USER@$ECS_HOST:$ECS_PATH/
+
+            # 验证上传的文件
+            echo "🔍 验证文件..."
+            ssh -p $ECS_PORT -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no \
+              $ECS_USER@$ECS_HOST "ls -lh $ECS_PATH/domestic_llm_models.json && echo '' && head -20 $ECS_PATH/domestic_llm_models.json"
+          fi
+
+          # 清理私钥
+          rm -f ~/.ssh/id_rsa ~/.ssh/known_hosts
+
+          echo "✅ 文件同步完成"
+
+  # 清理旧的 artifacts 以节省存储空间
+  cleanup:
+    name: Cleanup Old Artifacts
+    runs-on: ubuntu-latest
+    needs: [update-models, deploy-to-ecs]
+    permissions:
+      actions: write
+
+    steps:
+      - name: Delete old artifacts
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const artifacts = await github.rest.actions.listWorkflowRunArtifacts({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              run_id: context.runId,
+            });
+
+            // 保留最新的 10 个 artifacts
+            if (artifacts.data.total_count > 10) {
+              console.log(`当前有 ${artifacts.data.total_count} 个 artifacts，需要清理`);
+
+              // 获取所有 artifacts
+              const allArtifacts = await github.paginate(
+                github.rest.actions.listArtifactsForRepo,
+                {
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                }
+              );
+
+              // 删除超过 10 个的旧 artifacts
+              const toDelete = allArtifacts.slice(10);
+              for (const artifact of toDelete) {
+                console.log(`删除 artifact: ${artifact.name} (ID: ${artifact.id})`);
+                await github.rest.actions.deleteArtifact({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  artifact_id: artifact.id,
+                });
+              }
+              console.log(`✅ 已删除 ${toDelete.length} 个旧 artifacts`);
+            } else {
+              console.log(`当前有 ${artifacts.data.total_count} 个 artifacts，无需清理`);
+            }
