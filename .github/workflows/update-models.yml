@@ -1,0 +1,148 @@
+name: Update Domestic LLM Models
+
+on:
+  # 定时触发 - 每天北京时间上午10点 (UTC 02:00)
+  schedule:
+    - cron: '0 2 * * *'
+
+  # 手动触发
+  workflow_dispatch:
+
+  # Push 时触发（可选）
+  push:
+    branches:
+      - main
+    paths:
+      - 'fetch_domestic_models.py'
+      - '.github/workflows/update-models.yml'
+
+env:
+  # ECS 服务器配置
+  ECS_HOST: ${{ secrets.ECS_HOST }}
+  ECS_USER: ${{ secrets.ECS_USER }}
+  ECS_PATH: ${{ secrets.ECS_PATH }}
+  # ECS 路径示例: /data/domestic-llm-registry
+
+jobs:
+  update-models:
+    name: Fetch and Update Models
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Fetch domestic models
+        run: |
+          python fetch_domestic_models.py
+
+      - name: Show statistics
+        run: |
+          echo "📊 模型统计信息:"
+          echo "================================"
+          python3 -c "
+          import json
+          with open('output/domestic_llm_models.json', 'r', encoding='utf-8') as f:
+              data = json.load(f)
+          metadata = data['metadata']
+          print(f\"版本: {metadata['version']}\")
+          print(f\"更新时间: {metadata['last_updated']}\")
+          print(f\"模型总数: {metadata['total_models']}\")
+          print(f\"文件大小: {len(json.dumps(data, ensure_ascii=False)) / 1024:.2f} KB\")
+          "
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: domestic-llm-models-${{ github.run_number }}
+          path: output/domestic_llm_models.json
+          retention-days: 30
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet output/domestic_llm_models.json; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "⚠️ 模型数据未发生变化"
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "✅ 检测到模型数据变化"
+          fi
+
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git add output/domestic_llm_models.json
+          git commit -m "chore: update domestic LLM models
+
+          - 更新时间: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          - 模型总数: $(python3 -c "import json; print(json.load(open('output/domestic_llm_models.json'))['metadata']['total_models'])")
+          - Workflow: ${{ github.workflow }}
+          - Run: #${{ github.run_number }}"
+          git push
+
+  deploy-to-ecs:
+    name: Deploy to Aliyun ECS
+    runs-on: ubuntu-latest
+    needs: update-models
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: domestic-llm-models-${{ github.run_number }}
+          path: output/
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.ECS_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ env.ECS_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Deploy to ECS
+        run: |
+          echo "🚀 正在部署到阿里云 ECS..."
+          echo "主机: ${{ env.ECS_HOST }}"
+          echo "路径: ${{ env.ECS_PATH }}"
+
+          # 确保目标目录存在
+          ssh ${{ env.ECS_USER }}@${{ env.ECS_HOST }} "mkdir -p ${{ env.ECS_PATH }}"
+
+          # 使用 scp 上传文件
+          scp output/domestic_llm_models.json ${{ env.ECS_USER }}@${{ env.ECS_HOST }}:${{ env.ECS_PATH }}/
+
+          # 验证文件
+          ssh ${{ env.ECS_USER }}@${{ env.ECS_HOST }} "
+            echo '📦 文件已上传:'
+            ls -lh ${{ env.ECS_PATH }}/domestic_llm_models.json
+            echo ''
+            echo '📊 文件内容验证:'
+            head -n 20 ${{ env.ECS_PATH }}/domestic_llm_models.json
+          "
+
+          echo "✅ 部署完成!"
+
+      - name: Cleanup SSH
+        if: always()
+        run: |
+          rm -rf ~/.ssh/id_rsa ~/.ssh/known_hosts
