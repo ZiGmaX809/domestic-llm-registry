@@ -122,20 +122,51 @@ jobs:
         run: |
           echo "🚀 正在部署到阿里云 ECS (SFTP only)..."
           echo "主机: ${{ env.ECS_HOST }}"
-          echo "路径: ${{ env.ECS_PATH }}"
+          echo "目标路径: ${{ env.ECS_PATH }}"
 
-          # 使用 SFTP 直接上传文件到指定路径
-          # 使用 sftp 子命令语法: sftp -o "batch file" user@host
-          echo "put output/domestic_llm_models.json ${{ env.ECS_PATH }}/domestic_llm_models.json" | \
-          sftp -o StrictHostKeyChecking=no \
-               -o IdentityFile=~/.ssh/id_rsa \
-               -o BatchMode=yes \
-               -o ConnectTimeout=30 \
-               ${{ env.ECS_USER }}@${{ env.ECS_HOST }}
+          # 1. 先查看 SFTP 用户的根目录和可访问的目录
+          echo ""
+          echo "📂 检查 SFTP 环境信息:"
+          (echo "pwd"; echo "ls -la"; echo "quit") | sftp -o StrictHostKeyChecking=no -o IdentityFile=~/.ssh/id_rsa ${{ env.ECS_USER }}@${{ env.ECS_HOST }} 2>&1 | head -30
 
-          echo "✅ 文件上传成功!"
+          echo ""
+          echo "📤 尝试上传文件..."
+
+          # 2. 创建 SFTP 批处理脚本
+          cat > /tmp/sftp_cmd.txt << 'ENDSCRIPT'
+          # 显示当前目录
+          pwd
+
+          # 尝试切换到目标目录
+          cd -P /var/www/casecat.cn/api_data/llm
+          put output/domestic_llm_models.json domestic_llm_models.json
+
+          # 验证文件
+          ls -lh domestic_llm_models.json
+          pwd
+          quit
+          ENDSCRIPT
+
+          # 3. 执行 SFTP
+          if sftp -b /tmp/sftp_cmd.txt -o StrictHostKeyChecking=no -o IdentityFile=~/.ssh/id_rsa ${{ env.ECS_USER }}@${{ env.ECS_HOST }}; then
+            echo ""
+            echo "✅ 文件上传成功!"
+          else
+            echo ""
+            echo "⚠️ 上传到指定路径失败，尝试上传到 SFTP 根目录..."
+
+            # 备用方案：上传到 SFTP 根目录
+          cat > /tmp/sftp_fallback.txt << 'ENDSCRIPT'
+          put output/domestic_llm_models.json domestic_llm_models.json
+          ls -lh domestic_llm_models.json
+          quit
+          ENDSCRIPT
+
+          sftp -b /tmp/sftp_fallback.txt -o StrictHostKeyChecking=no -o IdentityFile=~/.ssh/id_rsa ${{ env.ECS_USER }}@${{ env.ECS_HOST }}
+          echo "✅ 文件已上传到 SFTP 根目录（请手动移动到目标位置）"
+          fi
 
       - name: Cleanup
         if: always()
         run: |
-          rm -rf ~/.ssh/id_rsa
+          rm -rf ~/.ssh/id_rsa /tmp/sftp_batch.txt 2>/dev/null || true

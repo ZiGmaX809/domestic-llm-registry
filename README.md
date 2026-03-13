@@ -94,3 +94,30 @@ cat ~/.ssh/ecs_deploy
 
 - **自动更新**: 每天 UTC 02:00 (北京时间 10:00)
 - **手动触发**: 在 Actions 页面手动运行
+
+## 故障排除
+
+### SFTP 上传失败：No such file or directory
+
+**原因**: SFTP 用户可能被 chroot 限制，无法访问完整系统路径。
+
+**解决方案**:
+
+1. **查看 SFTP 根目录**: Workflow 会自动显示 `pwd` 输出，确认 SFTP 用户的根目录
+
+2. **使用相对路径**: 如果 SFTP 根目录是 `/home/username`，目标路径设为 `api_data/llm` 而非 `/var/www/...`
+
+3. **修改 ECS 路径设置**:
+   - 修改 GitHub Secrets 中的 `ECS_PATH`
+   - 使用 SFTP 根目录下的相对路径
+
+4. **手动创建目录** (如果 SFTP 服务器支持):
+   ```bash
+   # 在服务器上创建目标目录
+   mkdir -p /var/www/casecat.cn/api_data/llm
+   chmod 755 /var/www/casecat.cn/api_data/llm
+   ```
+
+### SFTP 连接超时
+
+检查 ECS 安全组是否开放 22 端口，允许 GitHub Actions IP 访问。
