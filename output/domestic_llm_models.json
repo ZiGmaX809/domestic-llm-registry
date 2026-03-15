@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2026-03-14T04:06:18.146852",
+    "last_updated": "2026-03-15T04:29:11.099372",
     "total_models": 200,
     "source": "https://github.com/BerriAI/litellm",
     "description": "国产大模型清单 - 从 litellm 筛选并标准化"
@@ -1624,7 +1624,7 @@
       "supports_response_schema": false,
       "supports_audio_input": false,
       "supports_audio_output": false,
-      "supports_reasoning": false,
+      "supports_reasoning": true,
       "supports_web_search": false
     },
     "moonshot/kimi-latest": {
@@ -1738,7 +1738,7 @@
       "supports_response_schema": false,
       "supports_audio_input": false,
       "supports_audio_output": false,
-      "supports_reasoning": false,
+      "supports_reasoning": true,
       "supports_web_search": true
     },
     "moonshot/kimi-k2-thinking-turbo": {
@@ -1757,7 +1757,7 @@
       "supports_response_schema": false,
       "supports_audio_input": false,
       "supports_audio_output": false,
-      "supports_reasoning": false,
+      "supports_reasoning": true,
       "supports_web_search": true
     },
     "moonshot/moonshot-v1-128k": {
