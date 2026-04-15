@@ -1,8 +1,8 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2026-04-14T04:42:21.010837",
-    "total_models": 219,
+    "last_updated": "2026-04-15T04:42:37.536242",
+    "total_models": 220,
     "source": "https://github.com/BerriAI/litellm",
     "description": "国产大模型清单 - 从 litellm 筛选并标准化"
   },
@@ -2442,6 +2442,25 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
+      "supports_web_search": false
+    },
+    "wandb/MiniMaxAI/MiniMax-M2.5": {
+      "mode": "chat",
+      "litellm_provider": "wandb",
+      "max_tokens": 197000,
+      "max_input_tokens": 197000,
+      "max_output_tokens": 197000,
+      "input_cost_per_token": 3e-07,
+      "output_cost_per_token": 1.2e-06,
+      "supports_function_calling": true,
+      "supports_parallel_function_calling": false,
+      "supports_vision": false,
+      "supports_system_messages": true,
+      "supports_prompt_caching": false,
+      "supports_response_schema": true,
+      "supports_audio_input": false,
+      "supports_audio_output": false,
+      "supports_reasoning": true,
       "supports_web_search": false
     },
     "fireworks_ai/accounts/fireworks/models/minimax-m1-80k": {
