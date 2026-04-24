@@ -1,8 +1,8 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2026-04-23T04:47:07.104675",
-    "total_models": 221,
+    "last_updated": "2026-04-24T04:51:10.156776",
+    "total_models": 223,
     "source": "https://github.com/BerriAI/litellm",
     "description": "国产大模型清单 - 从 litellm 筛选并标准化"
   },
@@ -1131,6 +1131,44 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": true,
+      "supports_web_search": false
+    },
+    "dashscope/qwen-image-2.0": {
+      "mode": "image_generation",
+      "litellm_provider": "dashscope",
+      "max_tokens": null,
+      "max_input_tokens": null,
+      "max_output_tokens": null,
+      "input_cost_per_token": 0.0,
+      "output_cost_per_token": 0.0,
+      "supports_function_calling": false,
+      "supports_parallel_function_calling": false,
+      "supports_vision": false,
+      "supports_system_messages": true,
+      "supports_prompt_caching": false,
+      "supports_response_schema": false,
+      "supports_audio_input": false,
+      "supports_audio_output": false,
+      "supports_reasoning": false,
+      "supports_web_search": false
+    },
+    "dashscope/qwen-image-2.0-pro": {
+      "mode": "image_generation",
+      "litellm_provider": "dashscope",
+      "max_tokens": null,
+      "max_input_tokens": null,
+      "max_output_tokens": null,
+      "input_cost_per_token": 0.0,
+      "output_cost_per_token": 0.0,
+      "supports_function_calling": false,
+      "supports_parallel_function_calling": false,
+      "supports_vision": false,
+      "supports_system_messages": true,
+      "supports_prompt_caching": false,
+      "supports_response_schema": false,
+      "supports_audio_input": false,
+      "supports_audio_output": false,
+      "supports_reasoning": false,
       "supports_web_search": false
     },
     "deepseek/deepseek-chat": {
