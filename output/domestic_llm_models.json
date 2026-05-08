@@ -1,8 +1,8 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2026-05-07T05:27:34.158226",
-    "total_models": 223,
+    "last_updated": "2026-05-08T04:50:05.630386",
+    "total_models": 224,
     "source": "https://github.com/BerriAI/litellm",
     "description": "国产大模型清单 - 从 litellm 筛选并标准化"
   },
@@ -2480,6 +2480,25 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
+      "supports_web_search": false
+    },
+    "sambanova/MiniMax-M2.7": {
+      "mode": "chat",
+      "litellm_provider": "sambanova",
+      "max_tokens": 131072,
+      "max_input_tokens": 204800,
+      "max_output_tokens": 131072,
+      "input_cost_per_token": 3e-07,
+      "output_cost_per_token": 1.2e-06,
+      "supports_function_calling": true,
+      "supports_parallel_function_calling": false,
+      "supports_vision": false,
+      "supports_system_messages": true,
+      "supports_prompt_caching": false,
+      "supports_response_schema": false,
+      "supports_audio_input": false,
+      "supports_audio_output": false,
+      "supports_reasoning": true,
       "supports_web_search": false
     },
     "vertex_ai/minimaxai/minimax-m2-maas": {
