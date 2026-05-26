@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2026-05-25T06:21:54.045730",
+    "last_updated": "2026-05-26T06:01:54.370421",
     "total_models": 224,
     "source": "https://github.com/BerriAI/litellm",
     "description": "国产大模型清单 - 从 litellm 筛选并标准化"
