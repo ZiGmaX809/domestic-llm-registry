@@ -1,8 +1,8 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2026-06-06T05:49:54.733671",
-    "total_models": 224,
+    "last_updated": "2026-06-07T06:18:30.152681",
+    "total_models": 225,
     "source": "https://github.com/BerriAI/litellm",
     "description": "国产大模型清单 - 从 litellm 筛选并标准化"
   },
@@ -1836,6 +1836,25 @@
       "supports_reasoning": true,
       "supports_web_search": false
     },
+    "minimax/MiniMax-M3": {
+      "mode": "chat",
+      "litellm_provider": "minimax",
+      "max_tokens": null,
+      "max_input_tokens": 512000,
+      "max_output_tokens": 128000,
+      "input_cost_per_token": 6e-07,
+      "output_cost_per_token": 2.4e-06,
+      "supports_function_calling": true,
+      "supports_parallel_function_calling": false,
+      "supports_vision": true,
+      "supports_system_messages": true,
+      "supports_prompt_caching": true,
+      "supports_response_schema": false,
+      "supports_audio_input": false,
+      "supports_audio_output": false,
+      "supports_reasoning": true,
+      "supports_web_search": false
+    },
     "moonshot.kimi-k2-thinking": {
       "mode": "chat",
       "litellm_provider": "bedrock_converse",
@@ -1891,7 +1910,8 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": true
+      "supports_web_search": true,
+      "deprecation_date": "2026-05-25"
     },
     "moonshot/kimi-k2-0905-preview": {
       "mode": "chat",
@@ -1910,7 +1930,8 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": true
+      "supports_web_search": true,
+      "deprecation_date": "2026-05-25"
     },
     "moonshot/kimi-k2-turbo-preview": {
       "mode": "chat",
@@ -1929,7 +1950,8 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": true
+      "supports_web_search": true,
+      "deprecation_date": "2026-05-25"
     },
     "moonshot/kimi-k2.5": {
       "mode": "chat",
@@ -1944,7 +1966,7 @@
       "supports_vision": true,
       "supports_system_messages": true,
       "supports_prompt_caching": false,
-      "supports_response_schema": false,
+      "supports_response_schema": true,
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": true,
@@ -1963,7 +1985,7 @@
       "supports_vision": true,
       "supports_system_messages": true,
       "supports_prompt_caching": false,
-      "supports_response_schema": false,
+      "supports_response_schema": true,
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": true,
@@ -1986,7 +2008,8 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2026-01-28"
     },
     "moonshot/kimi-latest-128k": {
       "mode": "chat",
@@ -2005,7 +2028,8 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2026-01-28"
     },
     "moonshot/kimi-latest-32k": {
       "mode": "chat",
@@ -2024,7 +2048,8 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2026-01-28"
     },
     "moonshot/kimi-latest-8k": {
       "mode": "chat",
@@ -2043,7 +2068,8 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2026-01-28"
     },
     "moonshot/kimi-thinking-preview": {
       "mode": "chat",
@@ -2062,7 +2088,8 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2025-11-11"
     },
     "moonshot/kimi-k2-thinking": {
       "mode": "chat",
@@ -2081,7 +2108,8 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": true,
-      "supports_web_search": true
+      "supports_web_search": true,
+      "deprecation_date": "2026-05-25"
     },
     "moonshot/kimi-k2-thinking-turbo": {
       "mode": "chat",
@@ -2100,7 +2128,8 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": true,
-      "supports_web_search": true
+      "supports_web_search": true,
+      "deprecation_date": "2026-05-25"
     },
     "moonshot/moonshot-v1-128k": {
       "mode": "chat",
@@ -2115,7 +2144,7 @@
       "supports_vision": false,
       "supports_system_messages": true,
       "supports_prompt_caching": false,
-      "supports_response_schema": false,
+      "supports_response_schema": true,
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
@@ -2138,7 +2167,8 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2024-04-30"
     },
     "moonshot/moonshot-v1-128k-vision-preview": {
       "mode": "chat",
@@ -2153,7 +2183,7 @@
       "supports_vision": true,
       "supports_system_messages": true,
       "supports_prompt_caching": false,
-      "supports_response_schema": false,
+      "supports_response_schema": true,
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
@@ -2172,7 +2202,7 @@
       "supports_vision": false,
       "supports_system_messages": true,
       "supports_prompt_caching": false,
-      "supports_response_schema": false,
+      "supports_response_schema": true,
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
@@ -2195,7 +2225,8 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2024-04-30"
     },
     "moonshot/moonshot-v1-32k-vision-preview": {
       "mode": "chat",
@@ -2210,7 +2241,7 @@
       "supports_vision": true,
       "supports_system_messages": true,
       "supports_prompt_caching": false,
-      "supports_response_schema": false,
+      "supports_response_schema": true,
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
@@ -2229,7 +2260,7 @@
       "supports_vision": false,
       "supports_system_messages": true,
       "supports_prompt_caching": false,
-      "supports_response_schema": false,
+      "supports_response_schema": true,
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
@@ -2252,7 +2283,8 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2024-04-30"
     },
     "moonshot/moonshot-v1-8k-vision-preview": {
       "mode": "chat",
@@ -2267,7 +2299,7 @@
       "supports_vision": true,
       "supports_system_messages": true,
       "supports_prompt_caching": false,
-      "supports_response_schema": false,
+      "supports_response_schema": true,
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
@@ -2286,7 +2318,7 @@
       "supports_vision": false,
       "supports_system_messages": true,
       "supports_prompt_caching": false,
-      "supports_response_schema": false,
+      "supports_response_schema": true,
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
