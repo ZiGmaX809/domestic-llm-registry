@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2026-06-26T06:04:53.506216",
+    "last_updated": "2026-06-27T05:49:24.802483",
     "total_models": 235,
     "source": "https://github.com/BerriAI/litellm",
     "description": "国产大模型清单 - 从 litellm 筛选并标准化"
@@ -2594,10 +2594,10 @@
       "mode": "chat",
       "litellm_provider": "sambanova",
       "max_tokens": 131072,
-      "max_input_tokens": 204800,
+      "max_input_tokens": 196608,
       "max_output_tokens": 131072,
-      "input_cost_per_token": 3e-07,
-      "output_cost_per_token": 1.2e-06,
+      "input_cost_per_token": 6e-07,
+      "output_cost_per_token": 2.4e-06,
       "supports_function_calling": true,
       "supports_parallel_function_calling": false,
       "supports_vision": false,
