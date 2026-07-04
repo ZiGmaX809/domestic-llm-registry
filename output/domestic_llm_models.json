@@ -1,8 +1,8 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2026-07-03T05:47:47.129345",
-    "total_models": 235,
+    "last_updated": "2026-07-04T05:40:34.546771",
+    "total_models": 237,
     "source": "https://github.com/BerriAI/litellm",
     "description": "国产大模型清单 - 从 litellm 筛选并标准化"
   },
@@ -4469,6 +4469,44 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
+      "supports_web_search": false
+    },
+    "tencent/deepseek-v4-pro": {
+      "mode": "chat",
+      "litellm_provider": "tencent",
+      "max_tokens": 384000,
+      "max_input_tokens": 1000000,
+      "max_output_tokens": 384000,
+      "input_cost_per_token": 4.35e-07,
+      "output_cost_per_token": 8.7e-07,
+      "supports_function_calling": true,
+      "supports_parallel_function_calling": true,
+      "supports_vision": false,
+      "supports_system_messages": true,
+      "supports_prompt_caching": true,
+      "supports_response_schema": true,
+      "supports_audio_input": false,
+      "supports_audio_output": false,
+      "supports_reasoning": true,
+      "supports_web_search": false
+    },
+    "tencent/deepseek-v4-flash": {
+      "mode": "chat",
+      "litellm_provider": "tencent",
+      "max_tokens": 384000,
+      "max_input_tokens": 1000000,
+      "max_output_tokens": 384000,
+      "input_cost_per_token": 1.4e-07,
+      "output_cost_per_token": 2.8e-07,
+      "supports_function_calling": true,
+      "supports_parallel_function_calling": true,
+      "supports_vision": false,
+      "supports_system_messages": true,
+      "supports_prompt_caching": true,
+      "supports_response_schema": true,
+      "supports_audio_input": false,
+      "supports_audio_output": false,
+      "supports_reasoning": true,
       "supports_web_search": false
     },
     "pinstripes/ps/minimax-m2.7": {
