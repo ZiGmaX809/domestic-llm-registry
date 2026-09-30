@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2026-09-29T07:46:05.437525",
+    "last_updated": "2026-09-30T07:49:10.382491",
     "total_models": 410,
     "source": "https://github.com/BerriAI/litellm",
     "description": "国产大模型清单 - 从 litellm 筛选并标准化"
@@ -4282,11 +4282,11 @@
     "openrouter/minimax/minimax-m2": {
       "mode": "chat",
       "litellm_provider": "openrouter",
-      "max_tokens": 131072,
+      "max_tokens": 176947,
       "max_input_tokens": 204800,
-      "max_output_tokens": 131072,
-      "input_cost_per_token": 2.55e-07,
-      "output_cost_per_token": 1.02e-06,
+      "max_output_tokens": 176947,
+      "input_cost_per_token": 3e-07,
+      "output_cost_per_token": 1.2e-06,
       "supports_function_calling": true,
       "supports_parallel_function_calling": false,
       "supports_vision": false,
@@ -7764,8 +7764,8 @@
       "max_tokens": 131072,
       "max_input_tokens": 1000000,
       "max_output_tokens": 131072,
-      "input_cost_per_token": 3e-06,
-      "output_cost_per_token": 1.5e-05,
+      "input_cost_per_token": 3.3e-06,
+      "output_cost_per_token": 1.65e-05,
       "supports_function_calling": true,
       "supports_parallel_function_calling": false,
       "supports_vision": true,
