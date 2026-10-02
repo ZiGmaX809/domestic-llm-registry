@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2026-10-01T08:08:54.613637",
+    "last_updated": "2026-10-02T07:50:06.795008",
     "total_models": 410,
     "source": "https://github.com/BerriAI/litellm",
     "description": "国产大模型清单 - 从 litellm 筛选并标准化"
@@ -538,7 +538,8 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2026-07-24"
     },
     "deepseek-reasoner": {
       "mode": "chat",
@@ -557,7 +558,8 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": true,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2026-07-24"
     },
     "dashscope/deepseek-v4-flash": {
       "mode": "chat",
@@ -3232,7 +3234,8 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2026-07-24"
     },
     "deepseek/deepseek-coder": {
       "mode": "chat",
@@ -3289,7 +3292,8 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": true,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2026-07-24"
     },
     "deepseek/deepseek-v3": {
       "mode": "chat",
@@ -7688,7 +7692,7 @@
       "max_tokens": 40000,
       "max_input_tokens": 1000000,
       "max_output_tokens": 40000,
-      "input_cost_per_token": 4e-07,
+      "input_cost_per_token": 5.5e-07,
       "output_cost_per_token": 2.2e-06,
       "supports_function_calling": true,
       "supports_parallel_function_calling": false,
