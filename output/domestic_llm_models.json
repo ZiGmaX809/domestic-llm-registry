@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2026-10-08T08:17:09.146525",
+    "last_updated": "2026-10-09T08:19:00.493432",
     "total_models": 410,
     "source": "https://github.com/BerriAI/litellm",
     "description": "国产大模型清单 - 从 litellm 筛选并标准化"
@@ -63,13 +63,14 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2027-03-30"
     },
     "bedrock/ap-northeast-1/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
       "max_tokens": 8192,
-      "max_input_tokens": 1000000,
+      "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
       "output_cost_per_token": 1.44e-06,
@@ -101,13 +102,14 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2027-03-30"
     },
     "bedrock/ap-south-1/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
       "max_tokens": 8192,
-      "max_input_tokens": 1000000,
+      "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
       "output_cost_per_token": 1.44e-06,
@@ -126,7 +128,7 @@
       "mode": "chat",
       "litellm_provider": "bedrock",
       "max_tokens": 8192,
-      "max_input_tokens": 1000000,
+      "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.1e-07,
       "output_cost_per_token": 1.24e-06,
@@ -158,13 +160,14 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2027-03-30"
     },
     "bedrock/ap-southeast-3/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
       "max_tokens": 8192,
-      "max_input_tokens": 1000000,
+      "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
       "output_cost_per_token": 1.44e-06,
@@ -196,13 +199,14 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2027-03-30"
     },
     "bedrock/eu-north-1/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
       "max_tokens": 8192,
-      "max_input_tokens": 1000000,
+      "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
       "output_cost_per_token": 1.44e-06,
@@ -234,13 +238,14 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2027-03-30"
     },
     "bedrock/eu-central-1/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
       "max_tokens": 8192,
-      "max_input_tokens": 1000000,
+      "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
       "output_cost_per_token": 1.44e-06,
@@ -272,13 +277,14 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2027-03-30"
     },
     "bedrock/eu-west-1/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
       "max_tokens": 8192,
-      "max_input_tokens": 1000000,
+      "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
       "output_cost_per_token": 1.44e-06,
@@ -310,13 +316,14 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2027-03-30"
     },
     "bedrock/eu-west-2/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
       "max_tokens": 8192,
-      "max_input_tokens": 1000000,
+      "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 4.7e-07,
       "output_cost_per_token": 1.86e-06,
@@ -348,13 +355,14 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2027-03-30"
     },
     "bedrock/eu-south-1/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
       "max_tokens": 8192,
-      "max_input_tokens": 1000000,
+      "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
       "output_cost_per_token": 1.44e-06,
@@ -386,13 +394,14 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2027-03-30"
     },
     "bedrock/sa-east-1/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
       "max_tokens": 8192,
-      "max_input_tokens": 1000000,
+      "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
       "output_cost_per_token": 1.44e-06,
@@ -424,13 +433,14 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2027-03-30"
     },
     "bedrock/us-east-1/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
       "max_tokens": 8192,
-      "max_input_tokens": 1000000,
+      "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3e-07,
       "output_cost_per_token": 1.2e-06,
@@ -462,13 +472,14 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2027-03-30"
     },
     "bedrock/us-east-2/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
       "max_tokens": 8192,
-      "max_input_tokens": 1000000,
+      "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3e-07,
       "output_cost_per_token": 1.2e-06,
@@ -500,13 +511,14 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2027-03-30"
     },
     "bedrock/us-west-2/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
       "max_tokens": 8192,
-      "max_input_tokens": 1000000,
+      "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3e-07,
       "output_cost_per_token": 1.2e-06,
@@ -3336,9 +3348,9 @@
     "deepseek.v3-v1:0": {
       "mode": "chat",
       "litellm_provider": "bedrock_converse",
-      "max_tokens": 81920,
-      "max_input_tokens": 163840,
-      "max_output_tokens": 81920,
+      "max_tokens": 8000,
+      "max_input_tokens": 128000,
+      "max_output_tokens": 8000,
       "input_cost_per_token": 5.8e-07,
       "output_cost_per_token": 1.68e-06,
       "supports_function_calling": true,
@@ -3350,7 +3362,8 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": true,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2027-03-30"
     },
     "deepseek.v3.2": {
       "mode": "chat",
@@ -3768,7 +3781,8 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2027-03-30"
     },
     "minimax.minimax-m2.1": {
       "mode": "chat",
@@ -3787,7 +3801,8 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2027-03-30"
     },
     "minimax.minimax-m2.5": {
       "mode": "chat",
@@ -4015,7 +4030,8 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": true,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2027-03-30"
     },
     "moonshotai.kimi-k2.5": {
       "mode": "chat",
