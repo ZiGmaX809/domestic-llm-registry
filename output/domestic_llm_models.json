@@ -1,8 +1,8 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2026-10-19T07:12:05.255967",
-    "total_models": 451,
+    "last_updated": "2026-10-20T06:59:49.383712",
+    "total_models": 453,
     "source": "https://github.com/BerriAI/litellm",
     "description": "国产大模型清单 - 从 litellm 筛选并标准化"
   },
@@ -4049,6 +4049,25 @@
       "supports_reasoning": true,
       "supports_web_search": false
     },
+    "deepseek/search": {
+      "mode": "search",
+      "litellm_provider": "deepseek",
+      "max_tokens": null,
+      "max_input_tokens": null,
+      "max_output_tokens": null,
+      "input_cost_per_token": 0.0,
+      "output_cost_per_token": 0.0,
+      "supports_function_calling": false,
+      "supports_parallel_function_calling": false,
+      "supports_vision": false,
+      "supports_system_messages": true,
+      "supports_prompt_caching": false,
+      "supports_response_schema": false,
+      "supports_audio_input": false,
+      "supports_audio_output": false,
+      "supports_reasoning": false,
+      "supports_web_search": false
+    },
     "fal_ai/minimax/h3/text-to-video": {
       "mode": "video_generation",
       "litellm_provider": "fal_ai",
@@ -4218,7 +4237,8 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2026-10-16"
     },
     "jamba-1.5": {
       "mode": "chat",
@@ -8616,6 +8636,25 @@
       "supports_reasoning": true,
       "supports_web_search": false,
       "deprecation_date": "2027-03-30"
+    },
+    "fireworks_ai/accounts/fireworks/models/minimax-m3p1-flash": {
+      "mode": "chat",
+      "litellm_provider": "fireworks_ai",
+      "max_tokens": 1048576,
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 1048576,
+      "input_cost_per_token": 1.5e-07,
+      "output_cost_per_token": 6e-07,
+      "supports_function_calling": true,
+      "supports_parallel_function_calling": false,
+      "supports_vision": true,
+      "supports_system_messages": true,
+      "supports_prompt_caching": false,
+      "supports_response_schema": true,
+      "supports_audio_input": false,
+      "supports_audio_output": false,
+      "supports_reasoning": true,
+      "supports_web_search": false
     }
   }
 }
