@@ -1,8 +1,8 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2026-10-26T07:18:49.184727",
-    "total_models": 458,
+    "last_updated": "2026-10-27T07:10:34.110809",
+    "total_models": 459,
     "source": "https://github.com/BerriAI/litellm",
     "description": "国产大模型清单 - 从 litellm 筛选并标准化"
   },
@@ -10,7 +10,7 @@
     "azure_ai/FW-MiniMax-M2.5": {
       "mode": "chat",
       "litellm_provider": "azure_ai",
-      "max_tokens": 1000000,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 1000000,
       "input_cost_per_token": 3.3e-07,
@@ -30,7 +30,7 @@
     "azure_ai/FW-MiniMax-M3": {
       "mode": "chat",
       "litellm_provider": "azure_ai",
-      "max_tokens": 512000,
+      "max_tokens": null,
       "max_input_tokens": 512000,
       "max_output_tokens": 512000,
       "input_cost_per_token": 3.3e-07,
@@ -49,7 +49,7 @@
     "bedrock/ap-northeast-1/minimax.minimax-m2.1": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
@@ -69,7 +69,7 @@
     "bedrock/ap-northeast-1/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
@@ -88,7 +88,7 @@
     "bedrock/ap-south-1/minimax.minimax-m2.1": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
@@ -108,7 +108,7 @@
     "bedrock/ap-south-1/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
@@ -127,7 +127,7 @@
     "bedrock/ap-southeast-2/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.1e-07,
@@ -146,7 +146,7 @@
     "bedrock/ap-southeast-3/minimax.minimax-m2.1": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
@@ -166,7 +166,7 @@
     "bedrock/ap-southeast-3/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
@@ -185,7 +185,7 @@
     "bedrock/eu-north-1/minimax.minimax-m2.1": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
@@ -205,7 +205,7 @@
     "bedrock/eu-north-1/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
@@ -224,7 +224,7 @@
     "bedrock/eu-central-1/minimax.minimax-m2.1": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
@@ -244,7 +244,7 @@
     "bedrock/eu-central-1/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
@@ -263,7 +263,7 @@
     "bedrock/eu-west-1/minimax.minimax-m2.1": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
@@ -283,7 +283,7 @@
     "bedrock/eu-west-1/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
@@ -302,7 +302,7 @@
     "bedrock/eu-west-2/minimax.minimax-m2.1": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 4.7e-07,
@@ -322,7 +322,7 @@
     "bedrock/eu-west-2/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 4.7e-07,
@@ -341,7 +341,7 @@
     "bedrock/eu-south-1/minimax.minimax-m2.1": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
@@ -361,7 +361,7 @@
     "bedrock/eu-south-1/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
@@ -380,7 +380,7 @@
     "bedrock/sa-east-1/minimax.minimax-m2.1": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
@@ -400,7 +400,7 @@
     "bedrock/sa-east-1/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.6e-07,
@@ -419,7 +419,7 @@
     "bedrock/us-east-1/minimax.minimax-m2.1": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3e-07,
@@ -439,7 +439,7 @@
     "bedrock/us-east-1/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3e-07,
@@ -458,7 +458,7 @@
     "bedrock/us-east-2/minimax.minimax-m2.1": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3e-07,
@@ -478,7 +478,7 @@
     "bedrock/us-east-2/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3e-07,
@@ -497,7 +497,7 @@
     "bedrock/us-west-2/minimax.minimax-m2.1": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3e-07,
@@ -517,7 +517,7 @@
     "bedrock/us-west-2/minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3e-07,
@@ -536,7 +536,7 @@
     "deepseek-chat": {
       "mode": "chat",
       "litellm_provider": "deepseek",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 8192,
       "input_cost_per_token": 2.8e-07,
@@ -556,7 +556,7 @@
     "deepseek-reasoner": {
       "mode": "chat",
       "litellm_provider": "deepseek",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 65536,
       "input_cost_per_token": 2.8e-07,
@@ -576,7 +576,7 @@
     "dashscope/deepseek-v4-flash": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 393216,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 393216,
       "input_cost_per_token": 2e-07,
@@ -595,7 +595,7 @@
     "dashscope/deepseek-v4-flash-0731": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 393216,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 393216,
       "input_cost_per_token": 2e-07,
@@ -614,7 +614,7 @@
     "dashscope/deepseek-v4-pro": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 393216,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 393216,
       "input_cost_per_token": 2.4e-06,
@@ -633,7 +633,7 @@
     "dashscope/glm-5.1": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 202745,
       "max_output_tokens": 131072,
       "input_cost_per_token": 1.4e-06,
@@ -652,7 +652,7 @@
     "dashscope/glm-5.2": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 1048576,
       "max_output_tokens": 131072,
       "input_cost_per_token": 1.4e-06,
@@ -671,7 +671,7 @@
     "dashscope/kimi-k2.7-code": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 229376,
       "max_output_tokens": 16384,
       "input_cost_per_token": 9.5e-07,
@@ -690,7 +690,7 @@
     "dashscope/qwen-coder": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 16384,
       "input_cost_per_token": 3e-07,
@@ -709,7 +709,7 @@
     "dashscope/qwen-flash": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 32768,
       "input_cost_per_token": 0.0,
@@ -728,7 +728,7 @@
     "dashscope/qwen-flash-2025-07-28": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 32768,
       "input_cost_per_token": 0.0,
@@ -747,7 +747,7 @@
     "dashscope/qwen-max": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 30720,
       "max_output_tokens": 8192,
       "input_cost_per_token": 1.6e-06,
@@ -766,7 +766,7 @@
     "dashscope/qwen-plus": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 129024,
       "max_output_tokens": 16384,
       "input_cost_per_token": 4e-07,
@@ -785,7 +785,7 @@
     "dashscope/qwen-plus-2025-01-25": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 129024,
       "max_output_tokens": 8192,
       "input_cost_per_token": 4e-07,
@@ -804,7 +804,7 @@
     "dashscope/qwen-plus-2025-04-28": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 129024,
       "max_output_tokens": 16384,
       "input_cost_per_token": 4e-07,
@@ -824,7 +824,7 @@
     "dashscope/qwen-plus-2025-07-14": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 129024,
       "max_output_tokens": 16384,
       "input_cost_per_token": 4e-07,
@@ -844,7 +844,7 @@
     "dashscope/qwen-plus-2025-07-28": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 32768,
       "input_cost_per_token": 0.0,
@@ -863,7 +863,7 @@
     "dashscope/qwen-plus-2025-09-11": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 32768,
       "input_cost_per_token": 0.0,
@@ -882,7 +882,7 @@
     "dashscope/qwen-plus-latest": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 32768,
       "input_cost_per_token": 0.0,
@@ -901,7 +901,7 @@
     "dashscope/qwen-turbo": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 129024,
       "max_output_tokens": 16384,
       "input_cost_per_token": 5e-08,
@@ -921,7 +921,7 @@
     "dashscope/qwen-turbo-2024-11-01": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 5e-08,
@@ -940,7 +940,7 @@
     "dashscope/qwen-turbo-2025-04-28": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 16384,
       "input_cost_per_token": 5e-08,
@@ -960,7 +960,7 @@
     "dashscope/qwen-turbo-latest": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 16384,
       "input_cost_per_token": 5e-08,
@@ -980,7 +980,7 @@
     "dashscope/qwen3-30b-a3b": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 129024,
       "max_output_tokens": 16384,
       "input_cost_per_token": 0.0,
@@ -999,7 +999,7 @@
     "dashscope/qwen3-coder-flash": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -1018,7 +1018,7 @@
     "dashscope/qwen3-coder-flash-2025-07-28": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -1037,7 +1037,7 @@
     "dashscope/qwen3-coder-plus": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -1056,7 +1056,7 @@
     "dashscope/qwen3-coder-plus-2025-07-22": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -1075,7 +1075,7 @@
     "dashscope/qwen3-max-preview": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 258048,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -1094,7 +1094,7 @@
     "dashscope/qwen3-max": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 258048,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -1113,7 +1113,7 @@
     "dashscope/qwen3-max-2026-01-23": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 258048,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -1132,7 +1132,7 @@
     "dashscope/qwen3-next-80b-a3b-instruct": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 65536,
       "input_cost_per_token": 1.5e-07,
@@ -1151,7 +1151,7 @@
     "dashscope/qwen3-next-80b-a3b-thinking": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 65536,
       "input_cost_per_token": 1.5e-07,
@@ -1170,7 +1170,7 @@
     "dashscope/qwen3-vl-235b-a22b-instruct": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 4e-07,
@@ -1189,7 +1189,7 @@
     "dashscope/qwen3-vl-235b-a22b-thinking": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 4e-07,
@@ -1208,7 +1208,7 @@
     "dashscope/qwen3-vl-32b-instruct": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 1.6e-07,
@@ -1227,7 +1227,7 @@
     "dashscope/qwen3-vl-32b-thinking": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 1.6e-07,
@@ -1246,7 +1246,7 @@
     "dashscope/qwen3-vl-plus": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 260096,
       "max_output_tokens": 32768,
       "input_cost_per_token": 0.0,
@@ -1265,7 +1265,7 @@
     "dashscope/qwen3.5-plus": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 991808,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -1284,7 +1284,7 @@
     "dashscope/qwen3.7-max": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 991808,
       "max_output_tokens": 65536,
       "input_cost_per_token": 2.5e-06,
@@ -1303,7 +1303,7 @@
     "dashscope/qwen3.7-plus": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 991808,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -1322,7 +1322,7 @@
     "dashscope/qwen3.8-max": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 991808,
       "max_output_tokens": 131072,
       "input_cost_per_token": 2e-06,
@@ -1341,7 +1341,7 @@
     "dashscope/qwen3.8-flash": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 991808,
       "max_output_tokens": 131072,
       "input_cost_per_token": 1.5e-07,
@@ -1360,7 +1360,7 @@
     "dashscope/qwen3.8-omni-flash": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 991808,
       "max_output_tokens": 131072,
       "input_cost_per_token": 1.5e-07,
@@ -1379,7 +1379,7 @@
     "dashscope/qwq-plus": {
       "mode": "chat",
       "litellm_provider": "dashscope",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 98304,
       "max_output_tokens": 8192,
       "input_cost_per_token": 8e-07,
@@ -1683,7 +1683,7 @@
     "qwencloud/deepseek-v4-flash": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 393216,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 393216,
       "input_cost_per_token": 2e-07,
@@ -1702,7 +1702,7 @@
     "qwencloud/deepseek-v4-flash-0731": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 393216,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 393216,
       "input_cost_per_token": 2e-07,
@@ -1721,7 +1721,7 @@
     "qwencloud/deepseek-v4-pro": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 393216,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 393216,
       "input_cost_per_token": 2.4e-06,
@@ -1740,7 +1740,7 @@
     "qwencloud/glm-5.1": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 202745,
       "max_output_tokens": 131072,
       "input_cost_per_token": 1.4e-06,
@@ -1759,7 +1759,7 @@
     "qwencloud/glm-5.2": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 1048576,
       "max_output_tokens": 131072,
       "input_cost_per_token": 1.4e-06,
@@ -1778,7 +1778,7 @@
     "qwencloud/kimi-k2.7-code": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 229376,
       "max_output_tokens": 16384,
       "input_cost_per_token": 9.5e-07,
@@ -1797,7 +1797,7 @@
     "qwencloud/qwen-coder": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 16384,
       "input_cost_per_token": 3e-07,
@@ -1816,7 +1816,7 @@
     "qwencloud/qwen-flash": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 32768,
       "input_cost_per_token": 0.0,
@@ -1835,7 +1835,7 @@
     "qwencloud/qwen-flash-2025-07-28": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 32768,
       "input_cost_per_token": 0.0,
@@ -1854,7 +1854,7 @@
     "qwencloud/qwen-max": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 30720,
       "max_output_tokens": 8192,
       "input_cost_per_token": 1.6e-06,
@@ -1873,7 +1873,7 @@
     "qwencloud/qwen-plus": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 129024,
       "max_output_tokens": 16384,
       "input_cost_per_token": 4e-07,
@@ -1892,7 +1892,7 @@
     "qwencloud/qwen-plus-2025-01-25": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 129024,
       "max_output_tokens": 8192,
       "input_cost_per_token": 4e-07,
@@ -1911,7 +1911,7 @@
     "qwencloud/qwen-plus-2025-04-28": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 129024,
       "max_output_tokens": 16384,
       "input_cost_per_token": 4e-07,
@@ -1931,7 +1931,7 @@
     "qwencloud/qwen-plus-2025-07-14": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 129024,
       "max_output_tokens": 16384,
       "input_cost_per_token": 4e-07,
@@ -1951,7 +1951,7 @@
     "qwencloud/qwen-plus-2025-07-28": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 32768,
       "input_cost_per_token": 0.0,
@@ -1970,7 +1970,7 @@
     "qwencloud/qwen-plus-2025-09-11": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 32768,
       "input_cost_per_token": 0.0,
@@ -1989,7 +1989,7 @@
     "qwencloud/qwen-plus-latest": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 32768,
       "input_cost_per_token": 0.0,
@@ -2008,7 +2008,7 @@
     "qwencloud/qwen-turbo": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 129024,
       "max_output_tokens": 16384,
       "input_cost_per_token": 5e-08,
@@ -2028,7 +2028,7 @@
     "qwencloud/qwen-turbo-2024-11-01": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 5e-08,
@@ -2047,7 +2047,7 @@
     "qwencloud/qwen-turbo-2025-04-28": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 16384,
       "input_cost_per_token": 5e-08,
@@ -2067,7 +2067,7 @@
     "qwencloud/qwen-turbo-latest": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 16384,
       "input_cost_per_token": 5e-08,
@@ -2087,7 +2087,7 @@
     "qwencloud/qwen3-30b-a3b": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 129024,
       "max_output_tokens": 16384,
       "input_cost_per_token": 0.0,
@@ -2106,7 +2106,7 @@
     "qwencloud/qwen3-coder-flash": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -2125,7 +2125,7 @@
     "qwencloud/qwen3-coder-flash-2025-07-28": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -2144,7 +2144,7 @@
     "qwencloud/qwen3-coder-plus": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -2163,7 +2163,7 @@
     "qwencloud/qwen3-coder-plus-2025-07-22": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -2182,7 +2182,7 @@
     "qwencloud/qwen3-max-preview": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 258048,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -2201,7 +2201,7 @@
     "qwencloud/qwen3-max": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 258048,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -2220,7 +2220,7 @@
     "qwencloud/qwen3-max-2026-01-23": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 258048,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -2239,7 +2239,7 @@
     "qwencloud/qwen3-next-80b-a3b-instruct": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 65536,
       "input_cost_per_token": 1.5e-07,
@@ -2258,7 +2258,7 @@
     "qwencloud/qwen3-next-80b-a3b-thinking": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 65536,
       "input_cost_per_token": 1.5e-07,
@@ -2277,7 +2277,7 @@
     "qwencloud/qwen3-vl-235b-a22b-instruct": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 4e-07,
@@ -2296,7 +2296,7 @@
     "qwencloud/qwen3-vl-235b-a22b-thinking": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 4e-07,
@@ -2315,7 +2315,7 @@
     "qwencloud/qwen3-vl-32b-instruct": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 1.6e-07,
@@ -2334,7 +2334,7 @@
     "qwencloud/qwen3-vl-32b-thinking": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 1.6e-07,
@@ -2353,7 +2353,7 @@
     "qwencloud/qwen3-vl-plus": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 260096,
       "max_output_tokens": 32768,
       "input_cost_per_token": 0.0,
@@ -2372,7 +2372,7 @@
     "qwencloud/qwen3.5-plus": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 991808,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -2391,7 +2391,7 @@
     "qwencloud/qwen3.7-max": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 991808,
       "max_output_tokens": 65536,
       "input_cost_per_token": 2.5e-06,
@@ -2410,7 +2410,7 @@
     "qwencloud/qwen3.7-plus": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 991808,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -2429,7 +2429,7 @@
     "qwencloud/qwen3.8-max": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 991808,
       "max_output_tokens": 131072,
       "input_cost_per_token": 2e-06,
@@ -2448,7 +2448,7 @@
     "qwencloud/qwq-plus": {
       "mode": "chat",
       "litellm_provider": "qwencloud",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 98304,
       "max_output_tokens": 8192,
       "input_cost_per_token": 8e-07,
@@ -2752,7 +2752,7 @@
     "qwen_ai_platform/deepseek-v4-flash": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 393216,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 393216,
       "input_cost_per_token": 2e-07,
@@ -2771,7 +2771,7 @@
     "qwen_ai_platform/deepseek-v4-flash-0731": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 393216,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 393216,
       "input_cost_per_token": 2e-07,
@@ -2790,7 +2790,7 @@
     "qwen_ai_platform/deepseek-v4-pro": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 393216,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 393216,
       "input_cost_per_token": 2.4e-06,
@@ -2809,7 +2809,7 @@
     "qwen_ai_platform/glm-5.1": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 202745,
       "max_output_tokens": 131072,
       "input_cost_per_token": 1.4e-06,
@@ -2828,7 +2828,7 @@
     "qwen_ai_platform/glm-5.2": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 1048576,
       "max_output_tokens": 131072,
       "input_cost_per_token": 1.4e-06,
@@ -2847,7 +2847,7 @@
     "qwen_ai_platform/kimi-k2.7-code": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 229376,
       "max_output_tokens": 16384,
       "input_cost_per_token": 9.5e-07,
@@ -2866,7 +2866,7 @@
     "qwen_ai_platform/qwen-coder": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 16384,
       "input_cost_per_token": 3e-07,
@@ -2885,7 +2885,7 @@
     "qwen_ai_platform/qwen-flash": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 32768,
       "input_cost_per_token": 0.0,
@@ -2904,7 +2904,7 @@
     "qwen_ai_platform/qwen-flash-2025-07-28": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 32768,
       "input_cost_per_token": 0.0,
@@ -2923,7 +2923,7 @@
     "qwen_ai_platform/qwen-max": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 30720,
       "max_output_tokens": 8192,
       "input_cost_per_token": 1.6e-06,
@@ -2942,7 +2942,7 @@
     "qwen_ai_platform/qwen-plus": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 129024,
       "max_output_tokens": 16384,
       "input_cost_per_token": 4e-07,
@@ -2961,7 +2961,7 @@
     "qwen_ai_platform/qwen-plus-2025-01-25": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 129024,
       "max_output_tokens": 8192,
       "input_cost_per_token": 4e-07,
@@ -2980,7 +2980,7 @@
     "qwen_ai_platform/qwen-plus-2025-04-28": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 129024,
       "max_output_tokens": 16384,
       "input_cost_per_token": 4e-07,
@@ -3000,7 +3000,7 @@
     "qwen_ai_platform/qwen-plus-2025-07-14": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 129024,
       "max_output_tokens": 16384,
       "input_cost_per_token": 4e-07,
@@ -3020,7 +3020,7 @@
     "qwen_ai_platform/qwen-plus-2025-07-28": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 32768,
       "input_cost_per_token": 0.0,
@@ -3039,7 +3039,7 @@
     "qwen_ai_platform/qwen-plus-2025-09-11": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 32768,
       "input_cost_per_token": 0.0,
@@ -3058,7 +3058,7 @@
     "qwen_ai_platform/qwen-plus-latest": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 32768,
       "input_cost_per_token": 0.0,
@@ -3077,7 +3077,7 @@
     "qwen_ai_platform/qwen-turbo": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 129024,
       "max_output_tokens": 16384,
       "input_cost_per_token": 5e-08,
@@ -3097,7 +3097,7 @@
     "qwen_ai_platform/qwen-turbo-2024-11-01": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 5e-08,
@@ -3116,7 +3116,7 @@
     "qwen_ai_platform/qwen-turbo-2025-04-28": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 16384,
       "input_cost_per_token": 5e-08,
@@ -3136,7 +3136,7 @@
     "qwen_ai_platform/qwen-turbo-latest": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 16384,
       "input_cost_per_token": 5e-08,
@@ -3156,7 +3156,7 @@
     "qwen_ai_platform/qwen3-30b-a3b": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 129024,
       "max_output_tokens": 16384,
       "input_cost_per_token": 0.0,
@@ -3175,7 +3175,7 @@
     "qwen_ai_platform/qwen3-coder-flash": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -3194,7 +3194,7 @@
     "qwen_ai_platform/qwen3-coder-flash-2025-07-28": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -3213,7 +3213,7 @@
     "qwen_ai_platform/qwen3-coder-plus": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -3232,7 +3232,7 @@
     "qwen_ai_platform/qwen3-coder-plus-2025-07-22": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 997952,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -3251,7 +3251,7 @@
     "qwen_ai_platform/qwen3-max-preview": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 258048,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -3270,7 +3270,7 @@
     "qwen_ai_platform/qwen3-max": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 258048,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -3289,7 +3289,7 @@
     "qwen_ai_platform/qwen3-max-2026-01-23": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 258048,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -3308,7 +3308,7 @@
     "qwen_ai_platform/qwen3-next-80b-a3b-instruct": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 65536,
       "input_cost_per_token": 1.5e-07,
@@ -3327,7 +3327,7 @@
     "qwen_ai_platform/qwen3-next-80b-a3b-thinking": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 65536,
       "input_cost_per_token": 1.5e-07,
@@ -3346,7 +3346,7 @@
     "qwen_ai_platform/qwen3-vl-235b-a22b-instruct": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 4e-07,
@@ -3365,7 +3365,7 @@
     "qwen_ai_platform/qwen3-vl-235b-a22b-thinking": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 4e-07,
@@ -3384,7 +3384,7 @@
     "qwen_ai_platform/qwen3-vl-32b-instruct": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 1.6e-07,
@@ -3403,7 +3403,7 @@
     "qwen_ai_platform/qwen3-vl-32b-thinking": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 1.6e-07,
@@ -3422,7 +3422,7 @@
     "qwen_ai_platform/qwen3-vl-plus": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 260096,
       "max_output_tokens": 32768,
       "input_cost_per_token": 0.0,
@@ -3441,7 +3441,7 @@
     "qwen_ai_platform/qwen3.5-plus": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 991808,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -3460,7 +3460,7 @@
     "qwen_ai_platform/qwen3.7-max": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 991808,
       "max_output_tokens": 65536,
       "input_cost_per_token": 2.5e-06,
@@ -3479,7 +3479,7 @@
     "qwen_ai_platform/qwen3.7-plus": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 991808,
       "max_output_tokens": 65536,
       "input_cost_per_token": 0.0,
@@ -3498,7 +3498,7 @@
     "qwen_ai_platform/qwen3.8-max": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 991808,
       "max_output_tokens": 131072,
       "input_cost_per_token": 2e-06,
@@ -3517,7 +3517,7 @@
     "qwen_ai_platform/qwen3.8-flash": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 991808,
       "max_output_tokens": 131072,
       "input_cost_per_token": 1.5e-07,
@@ -3536,7 +3536,7 @@
     "qwen_ai_platform/qwen3.8-omni-flash": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 991808,
       "max_output_tokens": 131072,
       "input_cost_per_token": 1.5e-07,
@@ -3555,7 +3555,7 @@
     "qwen_ai_platform/qwq-plus": {
       "mode": "chat",
       "litellm_provider": "qwen_ai_platform",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 98304,
       "max_output_tokens": 8192,
       "input_cost_per_token": 8e-07,
@@ -3859,7 +3859,7 @@
     "deepseek/deepseek-chat": {
       "mode": "chat",
       "litellm_provider": "deepseek",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 8192,
       "input_cost_per_token": 2.8e-07,
@@ -3879,7 +3879,7 @@
     "deepseek/deepseek-coder": {
       "mode": "chat",
       "litellm_provider": "deepseek",
-      "max_tokens": 4096,
+      "max_tokens": null,
       "max_input_tokens": 128000,
       "max_output_tokens": 4096,
       "input_cost_per_token": 1.4e-07,
@@ -3898,7 +3898,7 @@
     "deepseek/deepseek-r1": {
       "mode": "chat",
       "litellm_provider": "deepseek",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 65536,
       "max_output_tokens": 8192,
       "input_cost_per_token": 5.5e-07,
@@ -3917,7 +3917,7 @@
     "deepseek/deepseek-reasoner": {
       "mode": "chat",
       "litellm_provider": "deepseek",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 65536,
       "input_cost_per_token": 2.8e-07,
@@ -3937,7 +3937,7 @@
     "deepseek/deepseek-v3": {
       "mode": "chat",
       "litellm_provider": "deepseek",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 65536,
       "max_output_tokens": 8192,
       "input_cost_per_token": 2.7e-07,
@@ -3956,7 +3956,7 @@
     "deepseek/deepseek-v3.2": {
       "mode": "chat",
       "litellm_provider": "deepseek",
-      "max_tokens": 163840,
+      "max_tokens": null,
       "max_input_tokens": 163840,
       "max_output_tokens": 163840,
       "input_cost_per_token": 2.8e-07,
@@ -3975,7 +3975,7 @@
     "deepseek.v3-v1:0": {
       "mode": "chat",
       "litellm_provider": "bedrock_converse",
-      "max_tokens": 8000,
+      "max_tokens": null,
       "max_input_tokens": 128000,
       "max_output_tokens": 8000,
       "input_cost_per_token": 5.8e-07,
@@ -3995,7 +3995,7 @@
     "deepseek.v3.2": {
       "mode": "chat",
       "litellm_provider": "bedrock_converse",
-      "max_tokens": 8000,
+      "max_tokens": null,
       "max_input_tokens": 164000,
       "max_output_tokens": 8000,
       "input_cost_per_token": 6.2e-07,
@@ -4014,7 +4014,7 @@
     "deepseek-v3-2-251201": {
       "mode": "chat",
       "litellm_provider": "volcengine",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 98304,
       "max_output_tokens": 32768,
       "input_cost_per_token": 0.0,
@@ -4033,7 +4033,7 @@
     "glm-4-7-251222": {
       "mode": "chat",
       "litellm_provider": "volcengine",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 204800,
       "max_output_tokens": 131072,
       "input_cost_per_token": 0.0,
@@ -4109,7 +4109,7 @@
     "fireworks_ai/accounts/fireworks/models/minimax-m2p1": {
       "mode": "chat",
       "litellm_provider": "fireworks_ai",
-      "max_tokens": 204800,
+      "max_tokens": null,
       "max_input_tokens": 196608,
       "max_output_tokens": 204800,
       "input_cost_per_token": 3e-07,
@@ -4128,7 +4128,7 @@
     "fireworks_ai/accounts/fireworks/models/minimax-m3": {
       "mode": "chat",
       "litellm_provider": "fireworks_ai",
-      "max_tokens": 512000,
+      "max_tokens": null,
       "max_input_tokens": 512000,
       "max_output_tokens": 512000,
       "input_cost_per_token": 3e-07,
@@ -4147,7 +4147,7 @@
     "fireworks_ai/minimax-m2p1": {
       "mode": "chat",
       "litellm_provider": "fireworks_ai",
-      "max_tokens": 204800,
+      "max_tokens": null,
       "max_input_tokens": 196608,
       "max_output_tokens": 204800,
       "input_cost_per_token": 3e-07,
@@ -4166,7 +4166,7 @@
     "fireworks_ai/minimax-m3": {
       "mode": "chat",
       "litellm_provider": "fireworks_ai",
-      "max_tokens": 512000,
+      "max_tokens": null,
       "max_input_tokens": 512000,
       "max_output_tokens": 512000,
       "input_cost_per_token": 3e-07,
@@ -4185,7 +4185,7 @@
     "friendliai/MiniMaxAI/MiniMax-M2.5": {
       "mode": "chat",
       "litellm_provider": "friendliai",
-      "max_tokens": 196608,
+      "max_tokens": null,
       "max_input_tokens": 196608,
       "max_output_tokens": 196608,
       "input_cost_per_token": 3e-07,
@@ -4204,7 +4204,7 @@
     "gmi/MiniMaxAI/MiniMax-M2.1": {
       "mode": "chat",
       "litellm_provider": "gmi",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 196608,
       "max_output_tokens": 16384,
       "input_cost_per_token": 3e-07,
@@ -4243,7 +4243,7 @@
     "jamba-1.5": {
       "mode": "chat",
       "litellm_provider": "ai21",
-      "max_tokens": 256000,
+      "max_tokens": null,
       "max_input_tokens": 256000,
       "max_output_tokens": 256000,
       "input_cost_per_token": 2e-07,
@@ -4262,7 +4262,7 @@
     "jamba-1.5-large": {
       "mode": "chat",
       "litellm_provider": "ai21",
-      "max_tokens": 256000,
+      "max_tokens": null,
       "max_input_tokens": 256000,
       "max_output_tokens": 256000,
       "input_cost_per_token": 2e-06,
@@ -4281,7 +4281,7 @@
     "jamba-1.5-large@001": {
       "mode": "chat",
       "litellm_provider": "ai21",
-      "max_tokens": 256000,
+      "max_tokens": null,
       "max_input_tokens": 256000,
       "max_output_tokens": 256000,
       "input_cost_per_token": 2e-06,
@@ -4300,7 +4300,7 @@
     "jamba-1.5-mini": {
       "mode": "chat",
       "litellm_provider": "ai21",
-      "max_tokens": 256000,
+      "max_tokens": null,
       "max_input_tokens": 256000,
       "max_output_tokens": 256000,
       "input_cost_per_token": 2e-07,
@@ -4319,7 +4319,7 @@
     "jamba-1.5-mini@001": {
       "mode": "chat",
       "litellm_provider": "ai21",
-      "max_tokens": 256000,
+      "max_tokens": null,
       "max_input_tokens": 256000,
       "max_output_tokens": 256000,
       "input_cost_per_token": 2e-07,
@@ -4338,7 +4338,7 @@
     "jamba-large-1.6": {
       "mode": "chat",
       "litellm_provider": "ai21",
-      "max_tokens": 256000,
+      "max_tokens": null,
       "max_input_tokens": 256000,
       "max_output_tokens": 256000,
       "input_cost_per_token": 2e-06,
@@ -4357,7 +4357,7 @@
     "jamba-large-1.7": {
       "mode": "chat",
       "litellm_provider": "ai21",
-      "max_tokens": 256000,
+      "max_tokens": null,
       "max_input_tokens": 256000,
       "max_output_tokens": 256000,
       "input_cost_per_token": 2e-06,
@@ -4376,7 +4376,7 @@
     "jamba-mini-1.6": {
       "mode": "chat",
       "litellm_provider": "ai21",
-      "max_tokens": 256000,
+      "max_tokens": null,
       "max_input_tokens": 256000,
       "max_output_tokens": 256000,
       "input_cost_per_token": 2e-07,
@@ -4395,7 +4395,7 @@
     "jamba-mini-1.7": {
       "mode": "chat",
       "litellm_provider": "ai21",
-      "max_tokens": 256000,
+      "max_tokens": null,
       "max_input_tokens": 256000,
       "max_output_tokens": 256000,
       "input_cost_per_token": 2e-07,
@@ -4414,7 +4414,7 @@
     "inferenceapis/minimax-m3": {
       "mode": "chat",
       "litellm_provider": "inferenceapis",
-      "max_tokens": 524288,
+      "max_tokens": null,
       "max_input_tokens": 524288,
       "max_output_tokens": 524288,
       "input_cost_per_token": 3.9e-07,
@@ -4433,7 +4433,7 @@
     "inferenceapis/MiniMaxAI/MiniMax-M3": {
       "mode": "chat",
       "litellm_provider": "inferenceapis",
-      "max_tokens": 524288,
+      "max_tokens": null,
       "max_input_tokens": 524288,
       "max_output_tokens": 524288,
       "input_cost_per_token": 3.9e-07,
@@ -4452,7 +4452,7 @@
     "minimax.minimax-m2": {
       "mode": "chat",
       "litellm_provider": "bedrock_converse",
-      "max_tokens": 8000,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 8000,
       "input_cost_per_token": 3e-07,
@@ -4472,7 +4472,7 @@
     "minimax.minimax-m2.1": {
       "mode": "chat",
       "litellm_provider": "bedrock_converse",
-      "max_tokens": 8000,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8000,
       "input_cost_per_token": 3e-07,
@@ -4492,7 +4492,7 @@
     "minimax.minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock_converse",
-      "max_tokens": 8000,
+      "max_tokens": null,
       "max_input_tokens": 196000,
       "max_output_tokens": 8000,
       "input_cost_per_token": 3e-07,
@@ -4739,7 +4739,7 @@
     "moonshot.kimi-k2-thinking": {
       "mode": "chat",
       "litellm_provider": "bedrock_converse",
-      "max_tokens": 16000,
+      "max_tokens": null,
       "max_input_tokens": 256000,
       "max_output_tokens": 16000,
       "input_cost_per_token": 6e-07,
@@ -4759,7 +4759,7 @@
     "moonshotai.kimi-k2.5": {
       "mode": "chat",
       "litellm_provider": "bedrock_converse",
-      "max_tokens": 16000,
+      "max_tokens": null,
       "max_input_tokens": 256000,
       "max_output_tokens": 16000,
       "input_cost_per_token": 6e-07,
@@ -4778,7 +4778,7 @@
     "moonshot/kimi-k2.7-code": {
       "mode": "chat",
       "litellm_provider": "moonshot",
-      "max_tokens": 262144,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 262144,
       "input_cost_per_token": 9.5e-07,
@@ -4797,7 +4797,7 @@
     "moonshot/kimi-k2.5": {
       "mode": "chat",
       "litellm_provider": "moonshot",
-      "max_tokens": 262144,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 262144,
       "input_cost_per_token": 6e-07,
@@ -4816,7 +4816,7 @@
     "moonshot/kimi-k2.6": {
       "mode": "chat",
       "litellm_provider": "moonshot",
-      "max_tokens": 262144,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 262144,
       "input_cost_per_token": 9.5e-07,
@@ -4835,7 +4835,7 @@
     "moonshot/kimi-k3": {
       "mode": "chat",
       "litellm_provider": "moonshot",
-      "max_tokens": 1048576,
+      "max_tokens": null,
       "max_input_tokens": 1048576,
       "max_output_tokens": 1048576,
       "input_cost_per_token": 3e-06,
@@ -4854,7 +4854,7 @@
     "moonshot/moonshot-v1-128k": {
       "mode": "chat",
       "litellm_provider": "moonshot",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 131072,
       "input_cost_per_token": 2e-06,
@@ -4873,7 +4873,7 @@
     "moonshot/moonshot-v1-128k-vision-preview": {
       "mode": "chat",
       "litellm_provider": "moonshot",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 131072,
       "input_cost_per_token": 2e-06,
@@ -4892,7 +4892,7 @@
     "moonshot/moonshot-v1-32k": {
       "mode": "chat",
       "litellm_provider": "moonshot",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 32768,
       "max_output_tokens": 32768,
       "input_cost_per_token": 1e-06,
@@ -4911,7 +4911,7 @@
     "moonshot/moonshot-v1-32k-vision-preview": {
       "mode": "chat",
       "litellm_provider": "moonshot",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 32768,
       "max_output_tokens": 32768,
       "input_cost_per_token": 1e-06,
@@ -4930,7 +4930,7 @@
     "moonshot/moonshot-v1-8k": {
       "mode": "chat",
       "litellm_provider": "moonshot",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 8192,
       "max_output_tokens": 8192,
       "input_cost_per_token": 2e-07,
@@ -4949,7 +4949,7 @@
     "moonshot/moonshot-v1-8k-vision-preview": {
       "mode": "chat",
       "litellm_provider": "moonshot",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 8192,
       "max_output_tokens": 8192,
       "input_cost_per_token": 2e-07,
@@ -4968,7 +4968,7 @@
     "moonshot/moonshot-v1-auto": {
       "mode": "chat",
       "litellm_provider": "moonshot",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 131072,
       "input_cost_per_token": 2e-06,
@@ -4987,7 +4987,7 @@
     "nebius/MiniMaxAI/MiniMax-M2.5": {
       "mode": "chat",
       "litellm_provider": "nebius",
-      "max_tokens": 196608,
+      "max_tokens": null,
       "max_input_tokens": 196608,
       "max_output_tokens": 196608,
       "input_cost_per_token": 3e-07,
@@ -5006,7 +5006,7 @@
     "nebius/MiniMaxAI/MiniMax-M3": {
       "mode": "chat",
       "litellm_provider": "nebius",
-      "max_tokens": 1048576,
+      "max_tokens": null,
       "max_input_tokens": 1048576,
       "max_output_tokens": 1048576,
       "input_cost_per_token": 3e-07,
@@ -5025,7 +5025,7 @@
     "qwen.qwen3-coder-480b-a35b-v1:0": {
       "mode": "chat",
       "litellm_provider": "bedrock_converse",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 16384,
       "input_cost_per_token": 4.5e-07,
@@ -5045,7 +5045,7 @@
     "qwen.qwen3-235b-a22b-2507-v1:0": {
       "mode": "chat",
       "litellm_provider": "bedrock_converse",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 8192,
       "input_cost_per_token": 2.2e-07,
@@ -5064,7 +5064,7 @@
     "qwen.qwen3-coder-30b-a3b-v1:0": {
       "mode": "chat",
       "litellm_provider": "bedrock_converse",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 16384,
       "input_cost_per_token": 1.5e-07,
@@ -5084,7 +5084,7 @@
     "qwen.qwen3-32b-v1:0": {
       "mode": "chat",
       "litellm_provider": "bedrock_converse",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 32768,
       "max_output_tokens": 8192,
       "input_cost_per_token": 1.5e-07,
@@ -5103,7 +5103,7 @@
     "qwen.qwen3-next-80b-a3b": {
       "mode": "chat",
       "litellm_provider": "bedrock_converse",
-      "max_tokens": 8000,
+      "max_tokens": null,
       "max_input_tokens": 256000,
       "max_output_tokens": 8000,
       "input_cost_per_token": 1.5e-07,
@@ -5122,7 +5122,7 @@
     "qwen.qwen3-vl-235b-a22b": {
       "mode": "chat",
       "litellm_provider": "bedrock_converse",
-      "max_tokens": 8000,
+      "max_tokens": null,
       "max_input_tokens": 256000,
       "max_output_tokens": 8000,
       "input_cost_per_token": 5.3e-07,
@@ -5141,7 +5141,7 @@
     "qwen.qwen3-coder-next": {
       "mode": "chat",
       "litellm_provider": "bedrock_converse",
-      "max_tokens": 16000,
+      "max_tokens": null,
       "max_input_tokens": 256000,
       "max_output_tokens": 16000,
       "input_cost_per_token": 5e-07,
@@ -5160,7 +5160,7 @@
     "sambanova/MiniMax-M2.7": {
       "mode": "chat",
       "litellm_provider": "sambanova",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 196608,
       "max_output_tokens": 131072,
       "input_cost_per_token": 6e-07,
@@ -5179,7 +5179,7 @@
     "together_ai/MiniMaxAI/MiniMax-M3": {
       "mode": "chat",
       "litellm_provider": "together_ai",
-      "max_tokens": 524288,
+      "max_tokens": null,
       "max_input_tokens": 524288,
       "max_output_tokens": 524288,
       "input_cost_per_token": 3e-07,
@@ -5198,7 +5198,7 @@
     "together_ai/MiniMaxAI/MiniMax-M3.1-Flash": {
       "mode": "chat",
       "litellm_provider": "together_ai",
-      "max_tokens": 1048576,
+      "max_tokens": null,
       "max_input_tokens": 1048576,
       "max_output_tokens": 1048576,
       "input_cost_per_token": 1.5e-07,
@@ -5217,7 +5217,7 @@
     "vertex_ai/minimaxai/minimax-m2-maas": {
       "mode": "chat",
       "litellm_provider": "vertex_ai-minimax_models",
-      "max_tokens": 196608,
+      "max_tokens": null,
       "max_input_tokens": 196608,
       "max_output_tokens": 196608,
       "input_cost_per_token": 3e-07,
@@ -5237,7 +5237,7 @@
     "fireworks_ai/accounts/fireworks/models/minimax-m1-80k": {
       "mode": "chat",
       "litellm_provider": "fireworks_ai",
-      "max_tokens": 4096,
+      "max_tokens": null,
       "max_input_tokens": 4096,
       "max_output_tokens": 4096,
       "input_cost_per_token": 1e-07,
@@ -5256,7 +5256,7 @@
     "fireworks_ai/accounts/fireworks/models/minimax-m2": {
       "mode": "chat",
       "litellm_provider": "fireworks_ai",
-      "max_tokens": 4096,
+      "max_tokens": null,
       "max_input_tokens": 196608,
       "max_output_tokens": 4096,
       "input_cost_per_token": 3e-07,
@@ -5275,7 +5275,7 @@
     "novita/deepseek/deepseek-v3.2": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 163840,
       "max_output_tokens": 65536,
       "input_cost_per_token": 2.69e-07,
@@ -5294,7 +5294,7 @@
     "novita/minimax/minimax-m2.1": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 204800,
       "max_output_tokens": 131072,
       "input_cost_per_token": 3e-07,
@@ -5313,7 +5313,7 @@
     "novita/zai-org/glm-4.7": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 204800,
       "max_output_tokens": 131072,
       "input_cost_per_token": 6e-07,
@@ -5332,7 +5332,7 @@
     "novita/xiaomimimo/mimo-v2-flash": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32000,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 32000,
       "input_cost_per_token": 1.1e-07,
@@ -5351,7 +5351,7 @@
     "novita/zai-org/autoglm-phone-9b-multilingual": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 65536,
       "max_output_tokens": 65536,
       "input_cost_per_token": 3.5e-08,
@@ -5370,7 +5370,7 @@
     "novita/moonshotai/kimi-k2-thinking": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 100352,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 100352,
       "input_cost_per_token": 6e-07,
@@ -5389,7 +5389,7 @@
     "novita/minimax/minimax-m2": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 204800,
       "max_output_tokens": 131072,
       "input_cost_per_token": 3e-07,
@@ -5408,7 +5408,7 @@
     "novita/paddlepaddle/paddleocr-vl": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 16384,
       "max_output_tokens": 16384,
       "input_cost_per_token": 2e-08,
@@ -5427,7 +5427,7 @@
     "novita/deepseek/deepseek-v3.2-exp": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 163840,
       "max_output_tokens": 65536,
       "input_cost_per_token": 2.7e-07,
@@ -5446,7 +5446,7 @@
     "novita/qwen/qwen3-vl-235b-a22b-thinking": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 9.8e-07,
@@ -5465,7 +5465,7 @@
     "novita/zai-org/glm-4.6v": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 3e-07,
@@ -5484,7 +5484,7 @@
     "novita/zai-org/glm-4.6": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 204800,
       "max_output_tokens": 131072,
       "input_cost_per_token": 5.5e-07,
@@ -5503,7 +5503,7 @@
     "novita/kwaipilot/kat-coder-pro": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 128000,
+      "max_tokens": null,
       "max_input_tokens": 256000,
       "max_output_tokens": 128000,
       "input_cost_per_token": 3e-07,
@@ -5522,7 +5522,7 @@
     "novita/qwen/qwen3-next-80b-a3b-instruct": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 1.5e-07,
@@ -5541,7 +5541,7 @@
     "novita/qwen/qwen3-next-80b-a3b-thinking": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 1.5e-07,
@@ -5560,7 +5560,7 @@
     "novita/deepseek/deepseek-ocr": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 8192,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3e-08,
@@ -5579,7 +5579,7 @@
     "novita/deepseek/deepseek-v3.1-terminus": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 2.7e-07,
@@ -5598,7 +5598,7 @@
     "novita/qwen/qwen3-vl-235b-a22b-instruct": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 3e-07,
@@ -5617,7 +5617,7 @@
     "novita/qwen/qwen3-max": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 65536,
       "input_cost_per_token": 2.11e-06,
@@ -5636,7 +5636,7 @@
     "novita/skywork/r1v4-lite": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 65536,
       "input_cost_per_token": 2e-07,
@@ -5655,7 +5655,7 @@
     "novita/deepseek/deepseek-v3.1": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 2.7e-07,
@@ -5674,7 +5674,7 @@
     "novita/moonshotai/kimi-k2-0905": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 100352,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 100352,
       "input_cost_per_token": 6e-07,
@@ -5693,7 +5693,7 @@
     "novita/qwen/qwen3-coder-480b-a35b-instruct": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 65536,
       "input_cost_per_token": 3.8e-07,
@@ -5712,7 +5712,7 @@
     "novita/qwen/qwen3-coder-30b-a3b-instruct": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 160000,
       "max_output_tokens": 32768,
       "input_cost_per_token": 7e-08,
@@ -5731,7 +5731,7 @@
     "novita/openai/gpt-oss-120b": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 5e-08,
@@ -5750,7 +5750,7 @@
     "novita/moonshotai/kimi-k2-instruct": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 100352,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 100352,
       "input_cost_per_token": 5.7e-07,
@@ -5769,7 +5769,7 @@
     "novita/deepseek/deepseek-v3-0324": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 163840,
       "max_output_tokens": 65536,
       "input_cost_per_token": 2.7e-07,
@@ -5788,7 +5788,7 @@
     "novita/zai-org/glm-4.5": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 98304,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 98304,
       "input_cost_per_token": 6e-07,
@@ -5807,7 +5807,7 @@
     "novita/qwen/qwen3-235b-a22b-thinking-2507": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 3e-07,
@@ -5826,7 +5826,7 @@
     "novita/meta-llama/llama-3.1-8b-instruct": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 16384,
       "max_output_tokens": 16384,
       "input_cost_per_token": 2e-08,
@@ -5845,7 +5845,7 @@
     "novita/google/gemma-3-12b-it": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 8192,
       "input_cost_per_token": 5e-08,
@@ -5864,7 +5864,7 @@
     "novita/zai-org/glm-4.5v": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 65536,
       "max_output_tokens": 16384,
       "input_cost_per_token": 6e-07,
@@ -5883,7 +5883,7 @@
     "novita/openai/gpt-oss-20b": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 4e-08,
@@ -5902,7 +5902,7 @@
     "novita/qwen/qwen3-235b-a22b-instruct-2507": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 16384,
       "input_cost_per_token": 9e-08,
@@ -5921,7 +5921,7 @@
     "novita/deepseek/deepseek-r1-distill-qwen-14b": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 32768,
       "max_output_tokens": 16384,
       "input_cost_per_token": 1.5e-07,
@@ -5940,7 +5940,7 @@
     "novita/meta-llama/llama-3.3-70b-instruct": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 12288,
+      "max_tokens": null,
       "max_input_tokens": 12288,
       "max_output_tokens": 12288,
       "input_cost_per_token": 1.35e-07,
@@ -5959,7 +5959,7 @@
     "novita/qwen/qwen-2.5-72b-instruct": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 32000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3.8e-07,
@@ -5978,7 +5978,7 @@
     "novita/mistralai/mistral-nemo": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 16000,
+      "max_tokens": null,
       "max_input_tokens": 60288,
       "max_output_tokens": 16000,
       "input_cost_per_token": 4e-08,
@@ -5997,7 +5997,7 @@
     "novita/minimaxai/minimax-m1-80k": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 40000,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 40000,
       "input_cost_per_token": 5.5e-07,
@@ -6016,7 +6016,7 @@
     "novita/deepseek/deepseek-r1-0528": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 163840,
       "max_output_tokens": 32768,
       "input_cost_per_token": 7e-07,
@@ -6035,7 +6035,7 @@
     "novita/deepseek/deepseek-r1-distill-qwen-32b": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32000,
+      "max_tokens": null,
       "max_input_tokens": 64000,
       "max_output_tokens": 32000,
       "input_cost_per_token": 3e-07,
@@ -6054,7 +6054,7 @@
     "novita/meta-llama/llama-3-8b-instruct": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 8192,
       "max_output_tokens": 8192,
       "input_cost_per_token": 4e-08,
@@ -6073,7 +6073,7 @@
     "novita/microsoft/wizardlm-2-8x22b": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 8000,
+      "max_tokens": null,
       "max_input_tokens": 65535,
       "max_output_tokens": 8000,
       "input_cost_per_token": 6.2e-07,
@@ -6092,7 +6092,7 @@
     "novita/deepseek/deepseek-r1-0528-qwen3-8b": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32000,
+      "max_tokens": null,
       "max_input_tokens": 128000,
       "max_output_tokens": 32000,
       "input_cost_per_token": 6e-08,
@@ -6111,7 +6111,7 @@
     "novita/deepseek/deepseek-r1-distill-llama-70b": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 8192,
       "max_output_tokens": 8192,
       "input_cost_per_token": 8e-07,
@@ -6130,7 +6130,7 @@
     "novita/meta-llama/llama-3-70b-instruct": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 8000,
+      "max_tokens": null,
       "max_input_tokens": 8192,
       "max_output_tokens": 8000,
       "input_cost_per_token": 5.1e-07,
@@ -6149,7 +6149,7 @@
     "novita/qwen/qwen3-235b-a22b-fp8": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 20000,
+      "max_tokens": null,
       "max_input_tokens": 40960,
       "max_output_tokens": 20000,
       "input_cost_per_token": 2e-07,
@@ -6168,7 +6168,7 @@
     "novita/meta-llama/llama-4-maverick-17b-128e-instruct-fp8": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 1048576,
       "max_output_tokens": 8192,
       "input_cost_per_token": 2.7e-07,
@@ -6187,7 +6187,7 @@
     "novita/meta-llama/llama-4-scout-17b-16e-instruct": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 131072,
       "input_cost_per_token": 1.8e-07,
@@ -6206,7 +6206,7 @@
     "novita/nousresearch/hermes-2-pro-llama-3-8b": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 8192,
       "max_output_tokens": 8192,
       "input_cost_per_token": 1.4e-07,
@@ -6225,7 +6225,7 @@
     "novita/qwen/qwen2.5-vl-72b-instruct": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 32768,
       "max_output_tokens": 32768,
       "input_cost_per_token": 8e-07,
@@ -6244,7 +6244,7 @@
     "novita/sao10k/l3-70b-euryale-v2.1": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 8192,
       "max_output_tokens": 8192,
       "input_cost_per_token": 1.48e-06,
@@ -6263,7 +6263,7 @@
     "novita/baidu/ernie-4.5-21B-a3b-thinking": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 65536,
       "input_cost_per_token": 7e-08,
@@ -6282,7 +6282,7 @@
     "novita/sao10k/l3-8b-lunaris": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 8192,
       "max_output_tokens": 8192,
       "input_cost_per_token": 5e-08,
@@ -6301,7 +6301,7 @@
     "novita/baichuan/baichuan-m2-32b": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 131072,
       "input_cost_per_token": 7e-08,
@@ -6320,7 +6320,7 @@
     "novita/baidu/ernie-4.5-vl-424b-a47b": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 16000,
+      "max_tokens": null,
       "max_input_tokens": 123000,
       "max_output_tokens": 16000,
       "input_cost_per_token": 4.2e-07,
@@ -6339,7 +6339,7 @@
     "novita/baidu/ernie-4.5-300b-a47b-paddle": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 12000,
+      "max_tokens": null,
       "max_input_tokens": 123000,
       "max_output_tokens": 12000,
       "input_cost_per_token": 2.8e-07,
@@ -6358,7 +6358,7 @@
     "novita/deepseek/deepseek-prover-v2-671b": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 160000,
+      "max_tokens": null,
       "max_input_tokens": 160000,
       "max_output_tokens": 160000,
       "input_cost_per_token": 7e-07,
@@ -6377,7 +6377,7 @@
     "novita/qwen/qwen3-32b-fp8": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 20000,
+      "max_tokens": null,
       "max_input_tokens": 40960,
       "max_output_tokens": 20000,
       "input_cost_per_token": 1e-07,
@@ -6396,7 +6396,7 @@
     "novita/qwen/qwen3-30b-a3b-fp8": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 20000,
+      "max_tokens": null,
       "max_input_tokens": 40960,
       "max_output_tokens": 20000,
       "input_cost_per_token": 9e-08,
@@ -6415,7 +6415,7 @@
     "novita/google/gemma-3-27b-it": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 98304,
       "max_output_tokens": 16384,
       "input_cost_per_token": 1.19e-07,
@@ -6434,7 +6434,7 @@
     "novita/deepseek/deepseek-v3-turbo": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 16000,
+      "max_tokens": null,
       "max_input_tokens": 64000,
       "max_output_tokens": 16000,
       "input_cost_per_token": 4e-07,
@@ -6453,7 +6453,7 @@
     "novita/deepseek/deepseek-r1-turbo": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 16000,
+      "max_tokens": null,
       "max_input_tokens": 64000,
       "max_output_tokens": 16000,
       "input_cost_per_token": 7e-07,
@@ -6472,7 +6472,7 @@
     "novita/Sao10K/L3-8B-Stheno-v3.2": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32000,
+      "max_tokens": null,
       "max_input_tokens": 8192,
       "max_output_tokens": 32000,
       "input_cost_per_token": 5e-08,
@@ -6491,7 +6491,7 @@
     "novita/gryphe/mythomax-l2-13b": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 3200,
+      "max_tokens": null,
       "max_input_tokens": 4096,
       "max_output_tokens": 3200,
       "input_cost_per_token": 9e-08,
@@ -6510,7 +6510,7 @@
     "novita/baidu/ernie-4.5-vl-28b-a3b-thinking": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 65536,
       "input_cost_per_token": 3.9e-07,
@@ -6529,7 +6529,7 @@
     "novita/qwen/qwen3-vl-8b-instruct": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 8e-08,
@@ -6548,7 +6548,7 @@
     "novita/zai-org/glm-4.5-air": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 98304,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 98304,
       "input_cost_per_token": 1.3e-07,
@@ -6567,7 +6567,7 @@
     "novita/qwen/qwen3-vl-30b-a3b-instruct": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 2e-07,
@@ -6586,7 +6586,7 @@
     "novita/qwen/qwen3-vl-30b-a3b-thinking": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 32768,
       "input_cost_per_token": 2e-07,
@@ -6605,7 +6605,7 @@
     "novita/qwen/qwen3-omni-30b-a3b-thinking": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 65536,
       "max_output_tokens": 16384,
       "input_cost_per_token": 2.5e-07,
@@ -6624,7 +6624,7 @@
     "novita/qwen/qwen3-omni-30b-a3b-instruct": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 16384,
+      "max_tokens": null,
       "max_input_tokens": 65536,
       "max_output_tokens": 16384,
       "input_cost_per_token": 2.5e-07,
@@ -6643,7 +6643,7 @@
     "novita/qwen/qwen-mt-plus": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 16384,
       "max_output_tokens": 8192,
       "input_cost_per_token": 2.5e-07,
@@ -6662,7 +6662,7 @@
     "novita/baidu/ernie-4.5-vl-28b-a3b": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 8000,
+      "max_tokens": null,
       "max_input_tokens": 30000,
       "max_output_tokens": 8000,
       "input_cost_per_token": 1.4e-07,
@@ -6681,7 +6681,7 @@
     "novita/baidu/ernie-4.5-21B-a3b": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 8000,
+      "max_tokens": null,
       "max_input_tokens": 120000,
       "max_output_tokens": 8000,
       "input_cost_per_token": 7e-08,
@@ -6700,7 +6700,7 @@
     "novita/qwen/qwen3-8b-fp8": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 20000,
+      "max_tokens": null,
       "max_input_tokens": 128000,
       "max_output_tokens": 20000,
       "input_cost_per_token": 3.5e-08,
@@ -6719,7 +6719,7 @@
     "novita/qwen/qwen3-4b-fp8": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 128000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3e-08,
@@ -6738,7 +6738,7 @@
     "novita/qwen/qwen2.5-7b-instruct": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 32000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 7e-08,
@@ -6757,7 +6757,7 @@
     "novita/meta-llama/llama-3.2-3b-instruct": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32000,
+      "max_tokens": null,
       "max_input_tokens": 32768,
       "max_output_tokens": 32000,
       "input_cost_per_token": 3e-08,
@@ -6776,7 +6776,7 @@
     "novita/sao10k/l31-70b-euryale-v2.2": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 8192,
       "max_output_tokens": 8192,
       "input_cost_per_token": 1.48e-06,
@@ -6795,7 +6795,7 @@
     "novita/qwen/qwen3-embedding-0.6b": {
       "mode": "embedding",
       "litellm_provider": "novita",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 32768,
       "max_output_tokens": 32768,
       "input_cost_per_token": 7e-08,
@@ -6814,7 +6814,7 @@
     "novita/qwen/qwen3-embedding-8b": {
       "mode": "embedding",
       "litellm_provider": "novita",
-      "max_tokens": 4096,
+      "max_tokens": null,
       "max_input_tokens": 32768,
       "max_output_tokens": 4096,
       "input_cost_per_token": 7e-08,
@@ -6833,7 +6833,7 @@
     "novita/baai/bge-m3": {
       "mode": "embedding",
       "litellm_provider": "novita",
-      "max_tokens": 96000,
+      "max_tokens": null,
       "max_input_tokens": 8192,
       "max_output_tokens": 96000,
       "input_cost_per_token": 1e-08,
@@ -6852,7 +6852,7 @@
     "novita/qwen/qwen3-reranker-8b": {
       "mode": "rerank",
       "litellm_provider": "novita",
-      "max_tokens": 4096,
+      "max_tokens": null,
       "max_input_tokens": 32768,
       "max_output_tokens": 4096,
       "input_cost_per_token": 5e-08,
@@ -6871,7 +6871,7 @@
     "novita/baai/bge-reranker-v2-m3": {
       "mode": "rerank",
       "litellm_provider": "novita",
-      "max_tokens": 8000,
+      "max_tokens": null,
       "max_input_tokens": 8000,
       "max_output_tokens": 8000,
       "input_cost_per_token": 1e-08,
@@ -6890,7 +6890,7 @@
     "volcengine/doubao-seed-2-0-pro-260215": {
       "mode": "chat",
       "litellm_provider": "volcengine",
-      "max_tokens": 128000,
+      "max_tokens": null,
       "max_input_tokens": 256000,
       "max_output_tokens": 128000,
       "input_cost_per_token": 0.0,
@@ -6909,7 +6909,7 @@
     "volcengine/doubao-seed-2-1-pro-260628": {
       "mode": "chat",
       "litellm_provider": "volcengine",
-      "max_tokens": 256000,
+      "max_tokens": null,
       "max_input_tokens": 256000,
       "max_output_tokens": 256000,
       "input_cost_per_token": 8.625e-07,
@@ -6928,7 +6928,7 @@
     "volcengine/doubao-seed-2-1-pro-260915": {
       "mode": "chat",
       "litellm_provider": "volcengine",
-      "max_tokens": 256000,
+      "max_tokens": null,
       "max_input_tokens": 1024000,
       "max_output_tokens": 256000,
       "input_cost_per_token": 8.625e-07,
@@ -6947,7 +6947,7 @@
     "volcengine/doubao-seed-2-1-lite-260915": {
       "mode": "chat",
       "litellm_provider": "volcengine",
-      "max_tokens": 256000,
+      "max_tokens": null,
       "max_input_tokens": 1024000,
       "max_output_tokens": 256000,
       "input_cost_per_token": 1.15e-07,
@@ -6967,7 +6967,7 @@
     "volcengine/doubao-seed-2-1-turbo-260628": {
       "mode": "chat",
       "litellm_provider": "volcengine",
-      "max_tokens": 256000,
+      "max_tokens": null,
       "max_input_tokens": 256000,
       "max_output_tokens": 256000,
       "input_cost_per_token": 4.3125e-07,
@@ -6986,7 +6986,7 @@
     "volcengine/doubao-seed-2-0-lite-260215": {
       "mode": "chat",
       "litellm_provider": "volcengine",
-      "max_tokens": 128000,
+      "max_tokens": null,
       "max_input_tokens": 256000,
       "max_output_tokens": 128000,
       "input_cost_per_token": 0.0,
@@ -7005,7 +7005,7 @@
     "volcengine/doubao-seed-2-0-mini-260215": {
       "mode": "chat",
       "litellm_provider": "volcengine",
-      "max_tokens": 128000,
+      "max_tokens": null,
       "max_input_tokens": 256000,
       "max_output_tokens": 128000,
       "input_cost_per_token": 0.0,
@@ -7024,7 +7024,7 @@
     "volcengine/doubao-seed-2-0-code-preview-260215": {
       "mode": "chat",
       "litellm_provider": "volcengine",
-      "max_tokens": 128000,
+      "max_tokens": null,
       "max_input_tokens": 256000,
       "max_output_tokens": 128000,
       "input_cost_per_token": 0.0,
@@ -7138,7 +7138,7 @@
     "deepseek-flash": {
       "mode": "chat",
       "litellm_provider": "deepseek",
-      "max_tokens": 393216,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 393216,
       "input_cost_per_token": 3e-07,
@@ -7157,7 +7157,7 @@
     "deepseek-v4-flash": {
       "mode": "chat",
       "litellm_provider": "deepseek",
-      "max_tokens": 393216,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 393216,
       "input_cost_per_token": 3e-07,
@@ -7176,7 +7176,7 @@
     "deepseek-v4-flash-vision-exp": {
       "mode": "chat",
       "litellm_provider": "deepseek",
-      "max_tokens": 393216,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 393216,
       "input_cost_per_token": 3e-07,
@@ -7195,7 +7195,7 @@
     "deepseek-v4-pro": {
       "mode": "chat",
       "litellm_provider": "deepseek",
-      "max_tokens": 393216,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 393216,
       "input_cost_per_token": 1.32e-06,
@@ -7214,7 +7214,7 @@
     "deepseek/deepseek-flash": {
       "mode": "chat",
       "litellm_provider": "deepseek",
-      "max_tokens": 393216,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 393216,
       "input_cost_per_token": 3e-07,
@@ -7233,7 +7233,7 @@
     "deepseek/deepseek-v4-flash": {
       "mode": "chat",
       "litellm_provider": "deepseek",
-      "max_tokens": 393216,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 393216,
       "input_cost_per_token": 3e-07,
@@ -7252,7 +7252,7 @@
     "deepseek/deepseek-v4-flash-vision-exp": {
       "mode": "chat",
       "litellm_provider": "deepseek",
-      "max_tokens": 393216,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 393216,
       "input_cost_per_token": 3e-07,
@@ -7271,7 +7271,7 @@
     "deepseek/deepseek-v4-pro": {
       "mode": "chat",
       "litellm_provider": "deepseek",
-      "max_tokens": 393216,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 393216,
       "input_cost_per_token": 1.32e-06,
@@ -7290,7 +7290,7 @@
     "tencent/deepseek-v4-pro": {
       "mode": "chat",
       "litellm_provider": "tencent",
-      "max_tokens": 384000,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 384000,
       "input_cost_per_token": 1.74e-06,
@@ -7309,7 +7309,7 @@
     "tencent/deepseek-v4-flash": {
       "mode": "chat",
       "litellm_provider": "tencent",
-      "max_tokens": 384000,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 384000,
       "input_cost_per_token": 1.4e-07,
@@ -7328,7 +7328,7 @@
     "tencent/deepseek-v4-pro-0813": {
       "mode": "chat",
       "litellm_provider": "tencent",
-      "max_tokens": 384000,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 384000,
       "input_cost_per_token": 1.32e-06,
@@ -7347,7 +7347,7 @@
     "tencent/deepseek-v4.1-flash": {
       "mode": "chat",
       "litellm_provider": "tencent",
-      "max_tokens": 384000,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 384000,
       "input_cost_per_token": 3e-07,
@@ -7366,7 +7366,7 @@
     "tencent/glm-5.3-flashx": {
       "mode": "chat",
       "litellm_provider": "tencent",
-      "max_tokens": 128000,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 128000,
       "input_cost_per_token": 3.7e-07,
@@ -7385,7 +7385,7 @@
     "tencent/glm-5.3-flash": {
       "mode": "chat",
       "litellm_provider": "tencent",
-      "max_tokens": 128000,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 128000,
       "input_cost_per_token": 1.5e-07,
@@ -7404,7 +7404,7 @@
     "tencent/glm-5.3": {
       "mode": "chat",
       "litellm_provider": "tencent",
-      "max_tokens": 128000,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 128000,
       "input_cost_per_token": 1.4e-06,
@@ -7423,7 +7423,7 @@
     "tencent/glm-5.2": {
       "mode": "chat",
       "litellm_provider": "tencent",
-      "max_tokens": 128000,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 128000,
       "input_cost_per_token": 1.4e-06,
@@ -7442,7 +7442,7 @@
     "tencent/kimi-k3": {
       "mode": "chat",
       "litellm_provider": "tencent",
-      "max_tokens": 1000000,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 1000000,
       "input_cost_per_token": 3e-06,
@@ -7461,7 +7461,7 @@
     "tencent/kimi-k2.8-preview": {
       "mode": "chat",
       "litellm_provider": "tencent",
-      "max_tokens": 1000000,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 1000000,
       "input_cost_per_token": 1e-06,
@@ -7480,7 +7480,7 @@
     "tencent/kimi-k2.7-code-highspeed": {
       "mode": "chat",
       "litellm_provider": "tencent",
-      "max_tokens": 256000,
+      "max_tokens": null,
       "max_input_tokens": 256000,
       "max_output_tokens": 256000,
       "input_cost_per_token": 1.9e-06,
@@ -7499,7 +7499,7 @@
     "tencent/kimi-k2.7-code": {
       "mode": "chat",
       "litellm_provider": "tencent",
-      "max_tokens": 256000,
+      "max_tokens": null,
       "max_input_tokens": 256000,
       "max_output_tokens": 256000,
       "input_cost_per_token": 9.5e-07,
@@ -7537,7 +7537,7 @@
     "pinstripes/ps/minimax-m2.7": {
       "mode": "chat",
       "litellm_provider": "pinstripes",
-      "max_tokens": 1000192,
+      "max_tokens": null,
       "max_input_tokens": 1000192,
       "max_output_tokens": 1000192,
       "input_cost_per_token": 2.55e-07,
@@ -7556,7 +7556,7 @@
     "novita/zai-org/glm-5.3": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 1048576,
       "max_output_tokens": 131072,
       "input_cost_per_token": 1.4e-06,
@@ -7575,7 +7575,7 @@
     "novita/deepseek/deepseek-v4-pro-0813": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 393216,
+      "max_tokens": null,
       "max_input_tokens": 1048576,
       "max_output_tokens": 393216,
       "input_cost_per_token": 1.32e-06,
@@ -7594,7 +7594,7 @@
     "novita/moonshotai/kimi-k3": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 1048576,
+      "max_tokens": null,
       "max_input_tokens": 1048576,
       "max_output_tokens": 1048576,
       "input_cost_per_token": 3e-06,
@@ -7613,7 +7613,7 @@
     "novita/tencent/hy3": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 262144,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 262144,
       "input_cost_per_token": 1.4e-07,
@@ -7632,7 +7632,7 @@
     "novita/zai-org/glm-5.2": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 1048576,
       "max_output_tokens": 131072,
       "input_cost_per_token": 1.4e-06,
@@ -7651,7 +7651,7 @@
     "novita/moonshotai/kimi-k2.7-code": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 262144,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 262144,
       "input_cost_per_token": 9.499999999999999e-07,
@@ -7670,7 +7670,7 @@
     "novita/deepseek/deepseek-v4-flash-vision-exp": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 393216,
+      "max_tokens": null,
       "max_input_tokens": 1048576,
       "max_output_tokens": 393216,
       "input_cost_per_token": 4.4e-07,
@@ -7689,7 +7689,7 @@
     "novita/deepseek/deepseek-v4-flash-0731": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 393216,
+      "max_tokens": null,
       "max_input_tokens": 1048576,
       "max_output_tokens": 393216,
       "input_cost_per_token": 4.4e-07,
@@ -7708,7 +7708,7 @@
     "novita/mindai/macaron-v1-venti": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 1048576,
       "max_output_tokens": 131072,
       "input_cost_per_token": 1.5e-06,
@@ -7727,7 +7727,7 @@
     "novita/minimax/minimax-m3": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 131072,
       "input_cost_per_token": 3e-07,
@@ -7746,7 +7746,7 @@
     "novita/deepseek/deepseek-v4-flash": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 393216,
+      "max_tokens": null,
       "max_input_tokens": 1048576,
       "max_output_tokens": 393216,
       "input_cost_per_token": 1.4e-07,
@@ -7765,7 +7765,7 @@
     "novita/deepseek/deepseek-v4-pro": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 393216,
+      "max_tokens": null,
       "max_input_tokens": 1048576,
       "max_output_tokens": 393216,
       "input_cost_per_token": 1.6000000000000001e-06,
@@ -7784,7 +7784,7 @@
     "novita/inclusionai/ling-3.0-flash-fast": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 32768,
       "input_cost_per_token": 6e-08,
@@ -7803,7 +7803,7 @@
     "novita/qwen/qwen3.8-max": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 131072,
       "input_cost_per_token": 2e-06,
@@ -7822,7 +7822,7 @@
     "novita/inclusionai/ling-3.0-flash": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 32768,
       "input_cost_per_token": 6e-08,
@@ -7841,7 +7841,7 @@
     "novita/mindai/macaron-v1-tall": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 32768,
       "input_cost_per_token": 4.5000000000000003e-07,
@@ -7860,7 +7860,7 @@
     "novita/stepfun/step-3.7-flash": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 256000,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 256000,
       "input_cost_per_token": 2.0000000000000002e-07,
@@ -7879,7 +7879,7 @@
     "novita/nvidia/nemotron-3-nano-30b-a3b": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32768,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 32768,
       "input_cost_per_token": 5.0000000000000004e-08,
@@ -7898,7 +7898,7 @@
     "novita/baidu/cobuddy": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 131072,
       "max_output_tokens": 65536,
       "input_cost_per_token": 2.8e-07,
@@ -7917,7 +7917,7 @@
     "novita/xiaomimimo/mimo-v2.5": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 1048576,
       "max_output_tokens": 131072,
       "input_cost_per_token": 1.6800000000000002e-07,
@@ -7936,7 +7936,7 @@
     "novita/qwen/qwen3.7-max": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 65536,
       "input_cost_per_token": 1.25e-06,
@@ -7955,7 +7955,7 @@
     "novita/xiaomimimo/mimo-v2.5-pro": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 1048576,
       "max_output_tokens": 131072,
       "input_cost_per_token": 5.22e-07,
@@ -7974,7 +7974,7 @@
     "novita/qwen/qwen3.6-27b": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 65536,
       "input_cost_per_token": 6e-07,
@@ -7993,7 +7993,7 @@
     "novita/moonshotai/kimi-k2.6": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 262144,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 262144,
       "input_cost_per_token": 8.000000000000001e-07,
@@ -8012,7 +8012,7 @@
     "novita/zai-org/glm-5.1": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 204800,
       "max_output_tokens": 131072,
       "input_cost_per_token": 1.38e-06,
@@ -8031,7 +8031,7 @@
     "novita/minimax/minimax-m2.7-highspeed": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 204800,
       "max_output_tokens": 131072,
       "input_cost_per_token": 6e-07,
@@ -8050,7 +8050,7 @@
     "novita/zai-org/glm-5v-turbo": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 204800,
       "max_output_tokens": 131072,
       "input_cost_per_token": 1.2e-06,
@@ -8069,7 +8069,7 @@
     "novita/google/gemma-4-26b-a4b-it": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 131072,
       "input_cost_per_token": 1.3e-07,
@@ -8088,7 +8088,7 @@
     "novita/google/gemma-4-31b-it": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 131072,
       "input_cost_per_token": 1.4e-07,
@@ -8107,7 +8107,7 @@
     "novita/zai-org/glm-5-turbo": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 202800,
       "max_output_tokens": 131072,
       "input_cost_per_token": 1.2e-06,
@@ -8126,7 +8126,7 @@
     "novita/minimax/minimax-m2.7": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 204800,
       "max_output_tokens": 131072,
       "input_cost_per_token": 3e-07,
@@ -8145,7 +8145,7 @@
     "novita/minimax/minimax-m2.5-highspeed": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131100,
+      "max_tokens": null,
       "max_input_tokens": 204800,
       "max_output_tokens": 131100,
       "input_cost_per_token": 6e-07,
@@ -8164,7 +8164,7 @@
     "novita/qwen/qwen3.5-27b": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 65536,
       "input_cost_per_token": 3e-07,
@@ -8183,7 +8183,7 @@
     "novita/qwen/qwen3.5-122b-a10b": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 65536,
       "input_cost_per_token": 4.0000000000000003e-07,
@@ -8202,7 +8202,7 @@
     "novita/qwen/qwen3.5-35b-a3b": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 65536,
       "input_cost_per_token": 2.5e-07,
@@ -8221,7 +8221,7 @@
     "novita/qwen/qwen3.5-397b-a17b": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 65536,
       "input_cost_per_token": 6e-07,
@@ -8240,7 +8240,7 @@
     "novita/minimax/minimax-m2.5": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131100,
+      "max_tokens": null,
       "max_input_tokens": 204800,
       "max_output_tokens": 131100,
       "input_cost_per_token": 3e-07,
@@ -8259,7 +8259,7 @@
     "novita/zai-org/glm-5": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 202800,
       "max_output_tokens": 131072,
       "input_cost_per_token": 1e-06,
@@ -8278,7 +8278,7 @@
     "novita/qwen/qwen3-coder-next": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 65536,
       "input_cost_per_token": 2.0000000000000002e-07,
@@ -8297,7 +8297,7 @@
     "novita/deepseek/deepseek-ocr-2": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 8192,
       "max_output_tokens": 8192,
       "input_cost_per_token": 3e-08,
@@ -8316,7 +8316,7 @@
     "novita/moonshotai/kimi-k2.5": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 262144,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 262144,
       "input_cost_per_token": 6e-07,
@@ -8335,7 +8335,7 @@
     "novita/zai-org/glm-4.7-h": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 204800,
       "max_output_tokens": 131072,
       "input_cost_per_token": 6e-07,
@@ -8354,7 +8354,7 @@
     "novita/zai-org/glm-4.7-flash": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 128000,
+      "max_tokens": null,
       "max_input_tokens": 200000,
       "max_output_tokens": 128000,
       "input_cost_per_token": 7e-08,
@@ -8373,7 +8373,7 @@
     "novita/qwen/qwen3.6-35b-a3b": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 65536,
+      "max_tokens": null,
       "max_input_tokens": 262144,
       "max_output_tokens": 65536,
       "input_cost_per_token": 2.48e-07,
@@ -8392,7 +8392,7 @@
     "novita/deepseek/deepseek_v3": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 16000,
+      "max_tokens": null,
       "max_input_tokens": 64000,
       "max_output_tokens": 16000,
       "input_cost_per_token": 8.900000000000001e-07,
@@ -8411,7 +8411,7 @@
     "novita/deepseek/deepseek-r1": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 16000,
+      "max_tokens": null,
       "max_input_tokens": 64000,
       "max_output_tokens": 16000,
       "input_cost_per_token": 4e-06,
@@ -8430,7 +8430,7 @@
     "novita/deepseek/deepseek-v3/community": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 8000,
+      "max_tokens": null,
       "max_input_tokens": 64000,
       "max_output_tokens": 8000,
       "input_cost_per_token": 8.900000000000001e-07,
@@ -8449,7 +8449,7 @@
     "novita/deepseek/deepseek-r1/community": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 8000,
+      "max_tokens": null,
       "max_input_tokens": 64000,
       "max_output_tokens": 8000,
       "input_cost_per_token": 4e-06,
@@ -8468,7 +8468,7 @@
     "novita/thudm/glm-4-32b-0414": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32000,
+      "max_tokens": null,
       "max_input_tokens": 32000,
       "max_output_tokens": 32000,
       "input_cost_per_token": 5.5e-07,
@@ -8487,7 +8487,7 @@
     "novita/meta-llama/llama-3.2-1b-instruct": {
       "mode": "chat",
       "litellm_provider": "novita",
-      "max_tokens": 32000,
+      "max_tokens": null,
       "max_input_tokens": 131000,
       "max_output_tokens": 32000,
       "input_cost_per_token": 2e-08,
@@ -8506,7 +8506,7 @@
     "wandb/MiniMaxAI/MiniMax-M3": {
       "mode": "chat",
       "litellm_provider": "wandb",
-      "max_tokens": 262144,
+      "max_tokens": null,
       "max_input_tokens": 262000,
       "max_output_tokens": 262144,
       "input_cost_per_token": 2.3e-07,
@@ -8525,7 +8525,7 @@
     "deepinfra/MiniMaxAI/MiniMax-M2.7": {
       "mode": "chat",
       "litellm_provider": "deepinfra",
-      "max_tokens": 196608,
+      "max_tokens": null,
       "max_input_tokens": 196608,
       "max_output_tokens": 196608,
       "input_cost_per_token": 2.5e-07,
@@ -8544,7 +8544,7 @@
     "deepinfra/MiniMaxAI/MiniMax-M3": {
       "mode": "chat",
       "litellm_provider": "deepinfra",
-      "max_tokens": 524288,
+      "max_tokens": null,
       "max_input_tokens": 524288,
       "max_output_tokens": 524288,
       "input_cost_per_token": 2.8e-07,
@@ -8563,7 +8563,7 @@
     "deepinfra/MiniMaxAI/MiniMax-M2.7-Turbo": {
       "mode": "chat",
       "litellm_provider": "deepinfra",
-      "max_tokens": 196608,
+      "max_tokens": null,
       "max_input_tokens": 196608,
       "max_output_tokens": 196608,
       "input_cost_per_token": 3.8e-07,
@@ -8601,7 +8601,7 @@
     "aihubmix/minimax-m2.7": {
       "mode": "chat",
       "litellm_provider": "aihubmix",
-      "max_tokens": 204800,
+      "max_tokens": null,
       "max_input_tokens": 204800,
       "max_output_tokens": 204800,
       "input_cost_per_token": 2.958e-07,
@@ -8620,7 +8620,7 @@
     "aihubmix/minimax-m3": {
       "mode": "chat",
       "litellm_provider": "aihubmix",
-      "max_tokens": 524288,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 524288,
       "input_cost_per_token": 2.88e-07,
@@ -8639,7 +8639,7 @@
     "moonshotai.kimi-k3": {
       "mode": "chat",
       "litellm_provider": "bedrock_converse",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 131072,
       "input_cost_per_token": 3.3e-06,
@@ -8658,7 +8658,7 @@
     "fireworks_ai/accounts/fireworks/models/minimax-m2p7": {
       "mode": "chat",
       "litellm_provider": "fireworks_ai",
-      "max_tokens": 196608,
+      "max_tokens": null,
       "max_input_tokens": 196608,
       "max_output_tokens": 196608,
       "input_cost_per_token": 0.0,
@@ -8678,7 +8678,7 @@
     "deepseek.r1-v1:0": {
       "mode": "chat",
       "litellm_provider": "bedrock_converse",
-      "max_tokens": 8192,
+      "max_tokens": null,
       "max_input_tokens": 128000,
       "max_output_tokens": 8192,
       "input_cost_per_token": 1.35e-06,
@@ -8698,7 +8698,7 @@
     "fireworks_ai/accounts/fireworks/models/minimax-m3p1-flash": {
       "mode": "chat",
       "litellm_provider": "fireworks_ai",
-      "max_tokens": 1048576,
+      "max_tokens": null,
       "max_input_tokens": 1048576,
       "max_output_tokens": 1048576,
       "input_cost_per_token": 1.5e-07,
@@ -8717,7 +8717,7 @@
     "opencode_go/minimax-m3.1-flash": {
       "mode": "chat",
       "litellm_provider": "opencode_go",
-      "max_tokens": 512000,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 512000,
       "input_cost_per_token": 1.5e-07,
@@ -8736,7 +8736,7 @@
     "opencode_go/minimax-m3": {
       "mode": "chat",
       "litellm_provider": "opencode_go",
-      "max_tokens": 131072,
+      "max_tokens": null,
       "max_input_tokens": 1000000,
       "max_output_tokens": 131072,
       "input_cost_per_token": 3e-07,
@@ -8747,6 +8747,25 @@
       "supports_system_messages": true,
       "supports_prompt_caching": false,
       "supports_response_schema": false,
+      "supports_audio_input": false,
+      "supports_audio_output": false,
+      "supports_reasoning": true,
+      "supports_web_search": false
+    },
+    "refuseless/minimax-m3.1-flash": {
+      "mode": "chat",
+      "litellm_provider": "refuseless",
+      "max_tokens": null,
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 512000,
+      "input_cost_per_token": 5e-08,
+      "output_cost_per_token": 2.5e-07,
+      "supports_function_calling": true,
+      "supports_parallel_function_calling": false,
+      "supports_vision": false,
+      "supports_system_messages": true,
+      "supports_prompt_caching": true,
+      "supports_response_schema": true,
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": true,
