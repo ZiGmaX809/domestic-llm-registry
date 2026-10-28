@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2026-10-27T07:10:34.110809",
+    "last_updated": "2026-10-28T07:49:25.855043",
     "total_models": 459,
     "source": "https://github.com/BerriAI/litellm",
     "description": "国产大模型清单 - 从 litellm 筛选并标准化"
@@ -5193,7 +5193,8 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": true,
-      "supports_web_search": false
+      "supports_web_search": false,
+      "deprecation_date": "2026-11-06"
     },
     "together_ai/MiniMaxAI/MiniMax-M3.1-Flash": {
       "mode": "chat",
