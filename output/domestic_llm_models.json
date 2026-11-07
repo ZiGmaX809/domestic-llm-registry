@@ -1,8 +1,8 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2026-11-06T08:50:42.042879",
-    "total_models": 486,
+    "last_updated": "2026-11-07T08:08:36.763525",
+    "total_models": 489,
     "source": "https://github.com/BerriAI/litellm",
     "description": "国产大模型清单 - 从 litellm 筛选并标准化"
   },
@@ -7676,6 +7676,44 @@
       "supports_reasoning": true,
       "supports_web_search": false
     },
+    "tencent/hy4": {
+      "mode": "chat",
+      "litellm_provider": "tencent",
+      "max_tokens": null,
+      "max_input_tokens": 960000,
+      "max_output_tokens": 64000,
+      "input_cost_per_token": 8.34e-07,
+      "output_cost_per_token": 2.501e-06,
+      "supports_function_calling": true,
+      "supports_parallel_function_calling": false,
+      "supports_vision": true,
+      "supports_system_messages": true,
+      "supports_prompt_caching": true,
+      "supports_response_schema": true,
+      "supports_audio_input": false,
+      "supports_audio_output": false,
+      "supports_reasoning": true,
+      "supports_web_search": false
+    },
+    "tencent/hy4-preview": {
+      "mode": "chat",
+      "litellm_provider": "tencent",
+      "max_tokens": null,
+      "max_input_tokens": 960000,
+      "max_output_tokens": 64000,
+      "input_cost_per_token": 8.34e-07,
+      "output_cost_per_token": 2.501e-06,
+      "supports_function_calling": true,
+      "supports_parallel_function_calling": false,
+      "supports_vision": false,
+      "supports_system_messages": true,
+      "supports_prompt_caching": true,
+      "supports_response_schema": true,
+      "supports_audio_input": false,
+      "supports_audio_output": false,
+      "supports_reasoning": true,
+      "supports_web_search": false
+    },
     "tencent/minimax-m3": {
       "mode": "chat",
       "litellm_provider": "tencent",
@@ -9306,6 +9344,25 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": false,
+      "supports_web_search": false
+    },
+    "moonshotai.kimi-k3.1": {
+      "mode": "chat",
+      "litellm_provider": "bedrock_converse",
+      "max_tokens": null,
+      "max_input_tokens": 868928,
+      "max_output_tokens": 131072,
+      "input_cost_per_token": 4.4e-06,
+      "output_cost_per_token": 2.2e-05,
+      "supports_function_calling": true,
+      "supports_parallel_function_calling": false,
+      "supports_vision": true,
+      "supports_system_messages": true,
+      "supports_prompt_caching": true,
+      "supports_response_schema": true,
+      "supports_audio_input": false,
+      "supports_audio_output": false,
+      "supports_reasoning": true,
       "supports_web_search": false
     }
   }
