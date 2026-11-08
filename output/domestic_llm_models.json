@@ -1,8 +1,8 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2026-11-07T08:08:36.763525",
-    "total_models": 489,
+    "last_updated": "2026-11-08T08:27:25.050575",
+    "total_models": 498,
     "source": "https://github.com/BerriAI/litellm",
     "description": "国产大模型清单 - 从 litellm 筛选并标准化"
   },
@@ -44,6 +44,25 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": true,
+      "supports_web_search": false
+    },
+    "azure_ai/minimax-latest": {
+      "mode": "chat",
+      "litellm_provider": "unknown",
+      "max_tokens": null,
+      "max_input_tokens": null,
+      "max_output_tokens": null,
+      "input_cost_per_token": 0.0,
+      "output_cost_per_token": 0.0,
+      "supports_function_calling": false,
+      "supports_parallel_function_calling": false,
+      "supports_vision": false,
+      "supports_system_messages": true,
+      "supports_prompt_caching": false,
+      "supports_response_schema": false,
+      "supports_audio_input": false,
+      "supports_audio_output": false,
+      "supports_reasoning": false,
       "supports_web_search": false
     },
     "bedrock/ap-northeast-1/minimax.minimax-m2.1": {
@@ -1338,6 +1357,25 @@
       "supports_reasoning": true,
       "supports_web_search": false
     },
+    "dashscope/qwen-max-latest": {
+      "mode": "chat",
+      "litellm_provider": "unknown",
+      "max_tokens": null,
+      "max_input_tokens": null,
+      "max_output_tokens": null,
+      "input_cost_per_token": 0.0,
+      "output_cost_per_token": 0.0,
+      "supports_function_calling": false,
+      "supports_parallel_function_calling": false,
+      "supports_vision": false,
+      "supports_system_messages": true,
+      "supports_prompt_caching": false,
+      "supports_response_schema": false,
+      "supports_audio_input": false,
+      "supports_audio_output": false,
+      "supports_reasoning": false,
+      "supports_web_search": false
+    },
     "dashscope/qwen3.8-flash": {
       "mode": "chat",
       "litellm_provider": "dashscope",
@@ -1356,6 +1394,25 @@
       "supports_audio_output": false,
       "supports_reasoning": true,
       "supports_web_search": true
+    },
+    "dashscope/qwen-flash-latest": {
+      "mode": "chat",
+      "litellm_provider": "unknown",
+      "max_tokens": null,
+      "max_input_tokens": null,
+      "max_output_tokens": null,
+      "input_cost_per_token": 0.0,
+      "output_cost_per_token": 0.0,
+      "supports_function_calling": false,
+      "supports_parallel_function_calling": false,
+      "supports_vision": false,
+      "supports_system_messages": true,
+      "supports_prompt_caching": false,
+      "supports_response_schema": false,
+      "supports_audio_input": false,
+      "supports_audio_output": false,
+      "supports_reasoning": false,
+      "supports_web_search": false
     },
     "dashscope/qwen3.8-omni-flash": {
       "mode": "chat",
@@ -4239,6 +4296,25 @@
       "supports_reasoning": true,
       "supports_web_search": false
     },
+    "fireworks_ai/minimax-latest": {
+      "mode": "chat",
+      "litellm_provider": "unknown",
+      "max_tokens": null,
+      "max_input_tokens": null,
+      "max_output_tokens": null,
+      "input_cost_per_token": 0.0,
+      "output_cost_per_token": 0.0,
+      "supports_function_calling": false,
+      "supports_parallel_function_calling": false,
+      "supports_vision": false,
+      "supports_system_messages": true,
+      "supports_prompt_caching": false,
+      "supports_response_schema": false,
+      "supports_audio_input": false,
+      "supports_audio_output": false,
+      "supports_reasoning": false,
+      "supports_web_search": false
+    },
     "fireworks_ai/minimax-m2p1": {
       "mode": "chat",
       "litellm_provider": "fireworks_ai",
@@ -4793,6 +4869,25 @@
       "supports_reasoning": true,
       "supports_web_search": false
     },
+    "minimax/minimax-latest": {
+      "mode": "chat",
+      "litellm_provider": "unknown",
+      "max_tokens": null,
+      "max_input_tokens": null,
+      "max_output_tokens": null,
+      "input_cost_per_token": 0.0,
+      "output_cost_per_token": 0.0,
+      "supports_function_calling": false,
+      "supports_parallel_function_calling": false,
+      "supports_vision": false,
+      "supports_system_messages": true,
+      "supports_prompt_caching": false,
+      "supports_response_schema": false,
+      "supports_audio_input": false,
+      "supports_audio_output": false,
+      "supports_reasoning": false,
+      "supports_web_search": false
+    },
     "minimax/MiniMax-H3": {
       "mode": "video_generation",
       "litellm_provider": "minimax",
@@ -4947,6 +5042,25 @@
       "supports_reasoning": true,
       "supports_web_search": false
     },
+    "moonshot/kimi-k3.1-pro-highspeed": {
+      "mode": "chat",
+      "litellm_provider": "moonshot",
+      "max_tokens": null,
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 1048576,
+      "input_cost_per_token": 4e-06,
+      "output_cost_per_token": 2e-05,
+      "supports_function_calling": true,
+      "supports_parallel_function_calling": false,
+      "supports_vision": true,
+      "supports_system_messages": true,
+      "supports_prompt_caching": true,
+      "supports_response_schema": true,
+      "supports_audio_input": false,
+      "supports_audio_output": false,
+      "supports_reasoning": true,
+      "supports_web_search": false
+    },
     "moonshot/kimi-k3": {
       "mode": "chat",
       "litellm_provider": "moonshot",
@@ -4964,6 +5078,25 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": true,
+      "supports_web_search": false
+    },
+    "moonshot/kimi-latest": {
+      "mode": "chat",
+      "litellm_provider": "unknown",
+      "max_tokens": null,
+      "max_input_tokens": null,
+      "max_output_tokens": null,
+      "input_cost_per_token": 0.0,
+      "output_cost_per_token": 0.0,
+      "supports_function_calling": false,
+      "supports_parallel_function_calling": false,
+      "supports_vision": false,
+      "supports_system_messages": true,
+      "supports_prompt_caching": false,
+      "supports_response_schema": false,
+      "supports_audio_input": false,
+      "supports_audio_output": false,
+      "supports_reasoning": false,
       "supports_web_search": false
     },
     "moonshot/moonshot-v1-128k": {
@@ -7410,6 +7543,25 @@
       "supports_reasoning": true,
       "supports_web_search": false
     },
+    "deepseek/deepseek-flash-latest": {
+      "mode": "chat",
+      "litellm_provider": "unknown",
+      "max_tokens": null,
+      "max_input_tokens": null,
+      "max_output_tokens": null,
+      "input_cost_per_token": 0.0,
+      "output_cost_per_token": 0.0,
+      "supports_function_calling": false,
+      "supports_parallel_function_calling": false,
+      "supports_vision": false,
+      "supports_system_messages": true,
+      "supports_prompt_caching": false,
+      "supports_response_schema": false,
+      "supports_audio_input": false,
+      "supports_audio_output": false,
+      "supports_reasoning": false,
+      "supports_web_search": false
+    },
     "deepseek/deepseek-v4-flash-vision-exp": {
       "mode": "chat",
       "litellm_provider": "deepseek",
@@ -7446,6 +7598,25 @@
       "supports_audio_input": false,
       "supports_audio_output": false,
       "supports_reasoning": true,
+      "supports_web_search": false
+    },
+    "deepseek/deepseek-pro-latest": {
+      "mode": "chat",
+      "litellm_provider": "unknown",
+      "max_tokens": null,
+      "max_input_tokens": null,
+      "max_output_tokens": null,
+      "input_cost_per_token": 0.0,
+      "output_cost_per_token": 0.0,
+      "supports_function_calling": false,
+      "supports_parallel_function_calling": false,
+      "supports_vision": false,
+      "supports_system_messages": true,
+      "supports_prompt_caching": false,
+      "supports_response_schema": false,
+      "supports_audio_input": false,
+      "supports_audio_output": false,
+      "supports_reasoning": false,
       "supports_web_search": false
     },
     "tencent/deepseek-v4-pro": {
