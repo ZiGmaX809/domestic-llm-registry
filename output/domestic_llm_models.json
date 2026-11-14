@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2026-11-13T08:58:50.776549",
+    "last_updated": "2026-11-14T08:26:35.445813",
     "total_models": 547,
     "source": "https://github.com/BerriAI/litellm",
     "description": "国产大模型清单 - 从 litellm 筛选并标准化"
@@ -9153,7 +9153,7 @@
       "supports_parallel_function_calling": false,
       "supports_vision": true,
       "supports_system_messages": true,
-      "supports_prompt_caching": false,
+      "supports_prompt_caching": true,
       "supports_response_schema": true,
       "supports_audio_input": false,
       "supports_audio_output": false,
