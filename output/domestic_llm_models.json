@@ -1,8 +1,8 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2026-11-20T09:31:29.357515",
-    "total_models": 589,
+    "last_updated": "2026-11-21T09:03:34.760559",
+    "total_models": 590,
     "source": "https://github.com/BerriAI/litellm",
     "description": "国产大模型清单 - 从 litellm 筛选并标准化"
   },
@@ -4628,6 +4628,25 @@
       "max_output_tokens": 524288,
       "input_cost_per_token": 3.9e-07,
       "output_cost_per_token": 1.56e-06,
+      "supports_function_calling": true,
+      "supports_parallel_function_calling": false,
+      "supports_vision": false,
+      "supports_system_messages": true,
+      "supports_prompt_caching": true,
+      "supports_response_schema": false,
+      "supports_audio_input": false,
+      "supports_audio_output": false,
+      "supports_reasoning": true,
+      "supports_web_search": false
+    },
+    "inferenceapis/MiniMaxAI/MiniMax-M3.1-Flash": {
+      "mode": "chat",
+      "litellm_provider": "inferenceapis",
+      "max_tokens": null,
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 1048576,
+      "input_cost_per_token": 2e-07,
+      "output_cost_per_token": 7.8e-07,
       "supports_function_calling": true,
       "supports_parallel_function_calling": false,
       "supports_vision": false,
